@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/singularity/singularity.git",
+  "base_commit": "99729e859b400e8271445458995a1dc4951ee321",
+  "license": "GPL-2.0-or-later; assets vary, see upstream LICENSE.txt",
+  "frontend": "original native desktop",
+  "split": "development",
+  "game_package": "singularity",
+  "family": "singularity",
+  "adapter_version": "0.1.0"
+}

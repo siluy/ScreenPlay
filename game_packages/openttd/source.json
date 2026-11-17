@@ -1,0 +1,15 @@
+{
+  "game_package": "openttd",
+  "family": "openttd",
+  "repo": "https://github.com/OpenTTD/OpenTTD.git",
+  "base_commit": "14ec60f248547d4d062a1160f0fc26d742319888",
+  "release": "15.3",
+  "license_file": "COPYING.md",
+  "adapter_version": "0.1.0",
+  "graphics": {
+    "name": "OpenGFX",
+    "version": "8.0",
+    "url": "https://cdn.openttd.org/opengfx-releases/8.0/opengfx-8.0-all.zip",
+    "original_project": "https://github.com/OpenTTD/OpenGFX"
+  }
+}

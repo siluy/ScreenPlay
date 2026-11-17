@@ -1,0 +1,1908 @@
+{
+  "openttd-dispatch": {
+    "game": "OpenTTD",
+    "game_id": "dispatch",
+    "instruction": "The complete route already has both orders; dispatch the bus. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 120,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 12000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false
+      },
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "dispatch"
+        ],
+        "difficulty_rationale": "One operational control with no repair or planning prerequisite. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-dispatch-author-v1"
+    }
+  },
+  "openttd-road-gap-1": {
+    "game": "OpenTTD",
+    "game_id": "road-gap-1",
+    "instruction": "Restore the one marked gap in the straight road and dispatch the bus. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 200,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 12000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [
+          24
+        ],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false
+      },
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "road_repair",
+          "dispatch"
+        ],
+        "difficulty_rationale": "Single visible infrastructure defect; route orders are already correct. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            512,
+            352
+          ],
+          "to": [
+            640,
+            288
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-road-gap-1-author-v1"
+    }
+  },
+  "openttd-road-gap-2": {
+    "game": "OpenTTD",
+    "game_id": "road-gap-2",
+    "instruction": "Restore the adjacent marked road gaps and dispatch the bus. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 200,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 12000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [
+          23,
+          24
+        ],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false
+      },
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "road_repair",
+          "dispatch"
+        ],
+        "difficulty_rationale": "One contiguous construction gesture repairs the defect; no branch or schedule reasoning. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            512,
+            352
+          ],
+          "to": [
+            640,
+            288
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-road-gap-2-author-v1"
+    }
+  },
+  "openttd-missing-east-order": {
+    "game": "OpenTTD",
+    "game_id": "missing-east-order",
+    "instruction": "The road is complete but only West Stop is ordered. Add East Stop to the schedule and dispatch. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, East Stop. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "order_editing",
+          "dispatch"
+        ],
+        "difficulty_rationale": "One missing order on a complete two-stop network. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 287,
+          "y": 453
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-missing-east-order-author-retry2"
+    }
+  },
+  "openttd-inspection-stop": {
+    "game": "OpenTTD",
+    "game_id": "inspection-stop",
+    "instruction": "Run the already configured complete route, then halt the bus after both visits. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. After completing all required visits, stop the bus. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": true,
+        "depot": false
+      },
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "dispatch",
+          "final_state_control"
+        ],
+        "difficulty_rationale": "An observation-dependent final stop, with generous time and no infrastructure uncertainty. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-inspection-stop-author-v1"
+    }
+  },
+  "openttd-full-load-deadlock": {
+    "game": "OpenTTD",
+    "game_id": "full-load-deadlock",
+    "instruction": "The West order incorrectly demands a full load at an empty inspection stop. Correct the loading policy and dispatch. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, East Stop. Set all station orders to load if available (no full-load orders). Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": true
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": true,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "order_policy",
+          "deadlock_recovery"
+        ],
+        "difficulty_rationale": "Must diagnose the difference between running and progressing; waiting alone cannot resolve full load. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 107
+        },
+        {
+          "type": "click",
+          "x": 220,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-full-load-deadlock-author"
+    }
+  },
+  "openttd-central-extension": {
+    "game": "OpenTTD",
+    "game_id": "central-extension",
+    "instruction": "Central Stop exists between West and East but is omitted from the order list. Add it between the other stops. Make the same Inspection Bus actually stop at West Stop and East Stop and Central Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, Central Stop, East Stop. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": true,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": true,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "central",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "order_insertion",
+          "three_stop_service"
+        ],
+        "difficulty_rationale": "Driving through a stop does not prove service; insertion position and actual visits matter. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 123
+        },
+        {
+          "type": "click",
+          "x": 483,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 512,
+          "y": 341
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-central-extension-author"
+    }
+  },
+  "openttd-detour-repair": {
+    "game": "OpenTTD",
+    "game_id": "detour-repair",
+    "instruction": "The road follows a U-shaped southern detour; repair its marked north-south gap and dispatch. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": true,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false
+      },
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "bent_network",
+          "road_orientation"
+        ],
+        "difficulty_rationale": "Two road orientations and a detour replace the straight-line gesture. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            416,
+            416
+          ],
+          "to": [
+            480,
+            448
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-detour-repair-author"
+    }
+  },
+  "openttd-inspection-return": {
+    "game": "OpenTTD",
+    "game_id": "inspection-return",
+    "instruction": "Run the complete two-stop route and bring the bus back to its depot after inspection. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. After completing all required visits, return the bus to its depot and stop it inside. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": true,
+        "depot": true
+      },
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "dispatch",
+          "depot_routing",
+          "final_state_control"
+        ],
+        "difficulty_rationale": "Return-to-depot interrupts the service loop; it must follow both actual visits. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 90
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-inspection-return-author-v1"
+    }
+  },
+  "openttd-repair-and-schedule": {
+    "game": "OpenTTD",
+    "game_id": "repair-and-schedule",
+    "instruction": "A road gap and a missing East Stop order both prevent completion. Repair the road and complete the schedule. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, East Stop. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 220,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [
+          24
+        ],
+        "orders": [
+          "west"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": false,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "road_repair",
+          "order_editing"
+        ],
+        "difficulty_rationale": "Independent physical and schedule defects require both repairs before service can succeed. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            512,
+            352
+          ],
+          "to": [
+            640,
+            288
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 565,
+          "y": 69
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 287,
+          "y": 453
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-repair-and-schedule-author-v1"
+    }
+  },
+  "openttd-detour-central-return": {
+    "game": "OpenTTD",
+    "game_id": "detour-central-return",
+    "instruction": "Central Stop lies on the southern detour, the detour has a marked gap, and Central is omitted from the orders. Restore and complete this three-stop inspection. Make the same Inspection Bus actually stop at West Stop and East Stop and Central Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, Central Stop, East Stop. After completing all required visits, return the bus to its depot and stop it inside. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 280,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": true,
+        "detour": true,
+        "full_load": false
+      },
+      "goal": {
+        "central": true,
+        "normal_loading": false,
+        "stopped": true,
+        "depot": true,
+        "orders": [
+          "west",
+          "central",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "bent_network",
+          "order_insertion",
+          "depot_routing"
+        ],
+        "difficulty_rationale": "Physical repair, schedule order and three visit evidence all precede safe depot return. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            416,
+            416
+          ],
+          "to": [
+            480,
+            448
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 565,
+          "y": 69
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 123
+        },
+        {
+          "type": "click",
+          "x": 483,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 405
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 90
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-detour-central-return-author-v1"
+    }
+  },
+  "openttd-deadlock-repair-return": {
+    "game": "OpenTTD",
+    "game_id": "deadlock-repair-return",
+    "instruction": "Repair the marked road gap and remove West Stop’s full-load demand before conducting inspection. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, East Stop. Set all station orders to load if available (no full-load orders). After completing all required visits, return the bus to its depot and stop it inside. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 280,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [
+          24
+        ],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": false,
+        "full_load": true
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": true,
+        "stopped": true,
+        "depot": true,
+        "orders": [
+          "west",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "road_repair",
+          "deadlock_recovery",
+          "depot_routing"
+        ],
+        "difficulty_rationale": "A visible infrastructure defect masks an independent schedule deadlock; return too early loses the required visit. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            512,
+            352
+          ],
+          "to": [
+            640,
+            288
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 565,
+          "y": 69
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 107
+        },
+        {
+          "type": "click",
+          "x": 220,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 90
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-deadlock-repair-return-author-v1"
+    }
+  },
+  "openttd-reorder-three-stop": {
+    "game": "OpenTTD",
+    "game_id": "reorder-three-stop",
+    "instruction": "The complete three-stop road has an initial East, West order list; Central is missing. Rebuild the repeating list as West, Central, East and halt after all three visits. Make the same Inspection Bus actually stop at West Stop and East Stop and Central Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, Central Stop, East Stop. After completing all required visits, stop the bus. Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 280,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "east",
+          "west"
+        ],
+        "central": true,
+        "detour": false,
+        "full_load": false
+      },
+      "goal": {
+        "central": true,
+        "normal_loading": false,
+        "stopped": true,
+        "depot": false,
+        "orders": [
+          "west",
+          "central",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "order_reordering",
+          "order_insertion",
+          "three_stop_service",
+          "final_state_control"
+        ],
+        "difficulty_rationale": "Editing an existing wrong order list needs selection, deletion/insertion and exact final order validation. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            107
+          ],
+          "to": [
+            100,
+            123
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 123
+        },
+        {
+          "type": "click",
+          "x": 483,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 512,
+          "y": 341
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 110,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-reorder-three-stop-author-v1"
+    }
+  },
+  "openttd-detour-budget": {
+    "game": "OpenTTD",
+    "game_id": "detour-budget",
+    "instruction": "On the southern detour, repair its marked gap and correct the West full-load order, then complete inspection under a tight cash reserve. Make the same Inspection Bus actually stop at West Stop and East Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, East Stop. Set all station orders to load if available (no full-load orders). Keep at least GBP 49,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 280,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 49000,
+      "fixture": {
+        "gaps": [],
+        "orders": [
+          "west",
+          "east"
+        ],
+        "central": false,
+        "detour": true,
+        "full_load": true
+      },
+      "goal": {
+        "central": false,
+        "normal_loading": true,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "bent_network",
+          "deadlock_recovery",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "Two failure mechanisms combine with reduced construction recovery room; gratuitous rebuilding can breach reserve. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            416,
+            416
+          ],
+          "to": [
+            480,
+            448
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 565,
+          "y": 69
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 107
+        },
+        {
+          "type": "click",
+          "x": 220,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-detour-budget-author-v1"
+    }
+  },
+  "openttd-three-stop-recovery": {
+    "game": "OpenTTD",
+    "game_id": "three-stop-recovery",
+    "instruction": "The straight road has a marked gap; the initial East, West schedule omits Central and West demands full load. Repair infrastructure and reconstruct a normal-loading West, Central, East service. Make the same Inspection Bus actually stop at West Stop and East Stop and Central Stop. Repair every marked road section. Finish with exactly this repeating explicit (user-defined) station-order list: West Stop, Central Stop, East Stop. Set all station orders to load if available (no full-load orders). Keep at least GBP 45,000 cash throughout, never borrow, and preserve the original bus and all required stops.",
+    "rules": "Use the original road-building, vehicle and order windows. These are inspection visits, not passenger-delivery contracts. The bus begins stopped in its depot; stops have no guaranteed passenger supply. Use wait to advance time; simulation is frozen while thinking. Road repairs are marked. Do not load, restart or switch game. Native station visits, marked road connections, specified order settings and final bus state are checked. Automatically generated implicit service entries are recorded separately and do not count as user-defined explicit orders.",
+    "max_decisions": 280,
+    "time_mode": "controlled_updates",
+    "undo_allowed": false,
+    "parameters": {
+      "seed": 20260914,
+      "max_updates": 20000,
+      "cash_floor": 45000,
+      "fixture": {
+        "gaps": [
+          23
+        ],
+        "orders": [
+          "east",
+          "west"
+        ],
+        "central": true,
+        "detour": false,
+        "full_load": true
+      },
+      "goal": {
+        "central": true,
+        "normal_loading": true,
+        "stopped": false,
+        "depot": false,
+        "orders": [
+          "west",
+          "central",
+          "east"
+        ]
+      },
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "road_repair",
+          "order_reordering",
+          "deadlock_recovery",
+          "three_stop_service"
+        ],
+        "difficulty_rationale": "Three independent defects must be separated; success requires both exact order policy and observed three-stop service. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1024,
+        672
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 729,
+          "y": 44
+        },
+        {
+          "type": "click",
+          "x": 780,
+          "y": 71
+        },
+        {
+          "type": "click",
+          "x": 625,
+          "y": 92
+        },
+        {
+          "type": "drag",
+          "from": [
+            512,
+            352
+          ],
+          "to": [
+            640,
+            288
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 565,
+          "y": 69
+        },
+        {
+          "type": "click",
+          "x": 300,
+          "y": 135
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            107
+          ],
+          "to": [
+            100,
+            123
+          ],
+          "duration_ms": 650
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 107
+        },
+        {
+          "type": "click",
+          "x": 220,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 100,
+          "y": 123
+        },
+        {
+          "type": "click",
+          "x": 483,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 512,
+          "y": 341
+        },
+        {
+          "type": "key_press",
+          "key": "escape"
+        },
+        {
+          "type": "click",
+          "x": 110,
+          "y": 217
+        },
+        {
+          "type": "click",
+          "x": 24,
+          "y": 89
+        },
+        {
+          "type": "click",
+          "x": 147,
+          "y": 199
+        },
+        {
+          "type": "click",
+          "x": 126,
+          "y": 44
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        },
+        {
+          "type": "wait",
+          "duration_ms": 5000
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/openttd-three-stop-recovery-author-v1"
+    }
+  }
+}

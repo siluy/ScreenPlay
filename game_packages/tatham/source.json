@@ -1,0 +1,12 @@
+{
+  "game_package": "tatham",
+  "family": "simon-tatham-puzzles",
+  "repo": "https://github.com/chrisboyle/sgtpuzzles.git",
+  "base_commit": "790f5851507be5845164d3ae7b32b2f86717fe50",
+  "upstream_branch": "upstream",
+  "original_project": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/",
+  "source_note": "The upstream branch mirrors Simon Tatham's desktop sources; this is not the Android port's main branch.",
+  "license_file": "LICENCE",
+  "supported_games": ["net", "untangle", "fifteen"],
+  "adapter_version": "0.1.0"
+}

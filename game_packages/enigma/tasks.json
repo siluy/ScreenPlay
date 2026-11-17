@@ -1,0 +1,7501 @@
+{
+  "enigma-oxyd-pair": {
+    "game": "Enigma",
+    "game_id": "oxyd-pair",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones. Touch two stones of the same color consecutively; remember revealed colors.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 30000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "marble inertia",
+          "oxyd pairing"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: A single pair in a safe open arena isolates native marble control."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 150,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 50,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 300,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 550,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 700,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-oxyd-pair-author-snapshot-3"
+    }
+  },
+  "enigma-oxyd-memory": {
+    "game": "Enigma",
+    "game_id": "oxyd-memory",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones. Touch two stones of the same color consecutively; remember revealed colors.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 30000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "marble inertia",
+          "oxyd pairing",
+          "color memory"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Two colors introduce short-term memory in an otherwise safe open arena."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 150,
+          "y": 112
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 50,
+          "y": 112
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 300,
+          "y": 262
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 550,
+          "y": 412
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 472
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 680,
+          "y": 222
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 720,
+          "y": 122
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 470,
+          "y": 232
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 220,
+          "y": 342
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        },
+        {
+          "type": "mouse_move",
+          "x": 30,
+          "y": 422
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1500
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-oxyd-memory-author-snapshot"
+    }
+  },
+  "enigma-switch-gate": {
+    "game": "Enigma",
+    "game_id": "switch-gate",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 180,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 30000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "switch",
+          "door",
+          "pairing"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: One visible switch controls the only passage; broad safe rooms allow recovery."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 292,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 184
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 152
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 489,
+          "y": 138
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 485,
+          "y": 78
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            485,
+            78
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 398,
+          "y": 227
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 398,
+          "y": 260
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 245
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 553,
+          "y": 245
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 554,
+          "y": 305
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            554,
+            305
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            294
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 540,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 539,
+          "y": 401
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 538,
+          "y": 466
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-switch-gate-author"
+    }
+  },
+  "enigma-crate-passage": {
+    "game": "Enigma",
+    "game_id": "crate-passage",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 180,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 30000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "pushable box",
+          "clearance",
+          "pairing"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: A box blocks the passage and can be pushed into a spacious landing area."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 292,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 184
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 152
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 539,
+          "y": 138
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 633,
+          "y": 138
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 632,
+          "y": 198
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            632,
+            198
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 600,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            600,
+            294
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 564,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            564,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 571,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 659,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 746,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            746,
+            291
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 664,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 752,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            752,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 664,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 752,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            752,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 664,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 752,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            752,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 663,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 751,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            751,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 571,
+          "y": 397
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            571,
+            397
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 601,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 596,
+          "y": 359
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-crate-passage-author"
+    }
+  },
+  "enigma-ice-crossing": {
+    "game": "Enigma",
+    "game_id": "ice-crossing",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 180,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 30000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "friction change",
+          "braking"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: One broad ice zone introduces momentum control without lethal borders."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 335,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 321,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 339,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 347,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 350,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 353,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 355,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 408,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 432,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 465,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 496,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 527,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            527,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 728,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 744,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            744,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 422,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 447,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 450,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 594,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 641,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-ice-crossing-author"
+    }
+  },
+  "enigma-winding-memory": {
+    "game": "Enigma",
+    "game_id": "winding-memory",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 260,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 40000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "maze navigation",
+          "color memory",
+          "return travel"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Alternating corridor entrances require remembering colors across long detours."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 447
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 512
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 482
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 497
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 496
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 252
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 492,
+          "y": 266
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 742,
+          "y": 267
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            742,
+            267
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 494,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 494,
+          "y": 543
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            494,
+            543
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 336
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 644,
+          "y": 335
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 629,
+          "y": 335
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 628,
+          "y": 85
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            628,
+            85
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 248
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 183
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 213
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 198
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 245,
+          "y": 199
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 244,
+          "y": 443
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 245,
+          "y": 429
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            245,
+            429
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 156,
+          "y": 290
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 170,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            170,
+            291
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 42
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            401,
+            42
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 247
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 182
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 211
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 196
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 196
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 556,
+          "y": 441
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 553,
+          "y": 426
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 753,
+          "y": 425
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 490
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-winding-memory-author-batch"
+    }
+  },
+  "enigma-keyed-chamber": {
+    "game": "Enigma",
+    "game_id": "keyed-chamber",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 260,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 40000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "inventory key",
+          "lock",
+          "door"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Access depends on collecting an item and using its matching lock before pairing."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 353,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 334,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 331,
+          "y": 198
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 330,
+          "y": 181
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 330,
+          "y": 174
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 330,
+          "y": 109
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 330,
+          "y": 132
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 377,
+          "y": 133
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 390,
+          "y": 134
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 396,
+          "y": 134
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 369
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 587,
+          "y": 373
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 598,
+          "y": 370
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 602,
+          "y": 369
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 180
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 170
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 166
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 101
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 123
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 698,
+          "y": 124
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 715,
+          "y": 124
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 722,
+          "y": 124
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 725,
+          "y": 77
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 726,
+          "y": 64
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 727,
+          "y": 58
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            727,
+            58
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 289
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            289
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 527,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 541,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 546,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 549,
+          "y": 386
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 550,
+          "y": 403
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 550,
+          "y": 410
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 550,
+          "y": 475
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-keyed-chamber-author-2"
+    }
+  },
+  "enigma-water-causeway": {
+    "game": "Enigma",
+    "game_id": "water-causeway",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Avoid water; losing the marble fails the task. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 260,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 40000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "water hazard",
+          "safe crossing",
+          "color memory"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: A finite-width bridge makes overshoot fatal while pairs require repeated crossings."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 184
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 152
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 588,
+          "y": 138
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            588,
+            138
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 615,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 600,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 599,
+          "y": 446
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 599,
+          "y": 511
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 599,
+          "y": 481
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 599,
+          "y": 496
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 349,
+          "y": 495
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 99,
+          "y": 495
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            99,
+            495
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 231,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 235,
+          "y": 401
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 236,
+          "y": 466
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 236,
+          "y": 433
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 236,
+          "y": 448
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 391,
+          "y": 448
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 391,
+          "y": 388
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 641,
+          "y": 386
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            641,
+            386
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 631,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 614,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 613,
+          "y": 92
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            613,
+            92
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 227
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-water-causeway-author-batch"
+    }
+  },
+  "enigma-sequential-gates": {
+    "game": "Enigma",
+    "game_id": "sequential-gates",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 260,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 40000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "switch dependency",
+          "two doors",
+          "route planning"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: The second control is accessible only after the first gate is opened."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 447
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 512
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 482
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 497
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 398,
+          "y": 496
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 251
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 267
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 202
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 231
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 216
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 216
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 744,
+          "y": 216
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 743,
+          "y": 461
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 743,
+          "y": 446
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 743,
+          "y": 511
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 743,
+          "y": 482
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 743,
+          "y": 497
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            743,
+            497
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 744,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            744,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 47
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 62
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            399,
+            62
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 227
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-sequential-gates-author-batch"
+    }
+  },
+  "enigma-friction-slalom": {
+    "game": "Enigma",
+    "game_id": "friction-slalom",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 260,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 40000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "ice",
+          "sand",
+          "obstacle avoidance",
+          "memory"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Changing traction and a central obstacle require braking and route correction in both directions."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 72
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 57
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 76
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 77
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 84
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 87
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 90
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 92
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 392,
+          "y": 94
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 416,
+          "y": 95
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 449,
+          "y": 95
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 480,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 543,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 574,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 605,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 637,
+          "y": 96
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            637,
+            96
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 296
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 150,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            150,
+            293
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 271,
+          "y": 542
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            271,
+            542
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 464,
+          "y": 542
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            464,
+            542
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 416,
+          "y": 542
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            416,
+            542
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 334
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 357
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 107
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            399,
+            107
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 42
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            399,
+            42
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 42
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            401,
+            42
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 51
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 287
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 649,
+          "y": 302
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            649,
+            302
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 311
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            311
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 301
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 694,
+          "y": 301
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 713,
+          "y": 301
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 734,
+          "y": 301
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 755,
+          "y": 301
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            301
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 434,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 466,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 497,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 528,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 559,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 577,
+          "y": 310
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 615,
+          "y": 362
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 608,
+          "y": 379
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 604,
+          "y": 361
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 601,
+          "y": 361
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 598,
+          "y": 355
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 596,
+          "y": 353
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 594,
+          "y": 350
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 593,
+          "y": 348
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 540,
+          "y": 346
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 516,
+          "y": 346
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 483,
+          "y": 345
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 452,
+          "y": 345
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 421,
+          "y": 345
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 389,
+          "y": 344
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 358,
+          "y": 344
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 108,
+          "y": 346
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 299,
+          "y": 345
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 505,
+          "y": 345
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 552,
+          "y": 346
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            552,
+            346
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 422,
+          "y": 542
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            422,
+            542
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 413,
+          "y": 377
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 413,
+          "y": 127
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 163,
+          "y": 81
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            163,
+            81
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 150,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            150,
+            285
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 150,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 107,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 88,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 66,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            66,
+            285
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 372,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 334,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 302,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 268,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 234,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 200,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 174,
+          "y": 314
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 126,
+          "y": 358
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 87,
+          "y": 382
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 106,
+          "y": 368
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 94,
+          "y": 375
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 152,
+          "y": 372
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 173,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 212,
+          "y": 373
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 243,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 278,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 311,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 345,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 595,
+          "y": 374
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            595,
+            374
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 632,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 639,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 662,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 683,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            683,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 421,
+          "y": 42
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            421,
+            42
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 410,
+          "y": 253
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 447,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 475,
+          "y": 194
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 506,
+          "y": 164
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 536,
+          "y": 134
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 566,
+          "y": 104
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 578,
+          "y": 74
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            578,
+            74
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 412,
+          "y": 261
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 420,
+          "y": 229
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 426,
+          "y": 214
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 431,
+          "y": 196
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 435,
+          "y": 163
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 442,
+          "y": 98
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-friction-slalom-author-batch"
+    }
+  },
+  "enigma-key-switch-cascade": {
+    "game": "Enigma",
+    "game_id": "key-switch-cascade",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 360,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 50000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "inventory dependency",
+          "switch dependency",
+          "memory across chambers"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: An item unlocks a first region, which contains the second gate control; pairing spans all three regions."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 447
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 512
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 482
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 497
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 496
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 296
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 492,
+          "y": 231
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 492,
+          "y": 256
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 492,
+          "y": 241
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 552,
+          "y": 241
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 181
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 755,
+          "y": 179
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 751,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 54
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 87
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 72
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            749,
+            72
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 508,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 492
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 755,
+          "y": 489
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 741,
+          "y": 486
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 739,
+          "y": 242
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 740,
+          "y": 256
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 740,
+          "y": 191
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 740,
+          "y": 220
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 740,
+          "y": 205
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 585,
+          "y": 206
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 585,
+          "y": 406
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 335,
+          "y": 403
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 291,
+          "y": 400
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 293,
+          "y": 200
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 48,
+          "y": 203
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 63,
+          "y": 206
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 65,
+          "y": 146
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 65,
+          "y": 81
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 65,
+          "y": 113
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 64,
+          "y": 99
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 314,
+          "y": 99
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 501,
+          "y": 99
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 489,
+          "y": 100
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 489,
+          "y": 300
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 689,
+          "y": 297
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 685,
+          "y": 355
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 683,
+          "y": 420
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-key-switch-cascade-author-batch"
+    }
+  },
+  "enigma-crate-labyrinth": {
+    "game": "Enigma",
+    "game_id": "crate-labyrinth",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 360,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 50000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "multiple boxes",
+          "push clearance",
+          "maze",
+          "color memory"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Two narrow openings need box displacement with enough clearance for returning to remembered stones."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 337,
+          "y": 227
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 337,
+          "y": 257
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 242
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 538,
+          "y": 243
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 735,
+          "y": 243
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            735,
+            243
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 564,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            564,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 570,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 649,
+          "y": 490
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            649,
+            490
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 288
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            288
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 402
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            402
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 288
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            288
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            291
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 638,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            638,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 586,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 670,
+          "y": 397
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 735,
+          "y": 398
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 702,
+          "y": 398
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 398
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 657,
+          "y": 398
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 655,
+          "y": 290
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 405,
+          "y": 287
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 360,
+          "y": 288
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 362,
+          "y": 88
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 117,
+          "y": 91
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 132,
+          "y": 94
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 134,
+          "y": 159
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 134,
+          "y": 129
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 134,
+          "y": 144
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 288,
+          "y": 143
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 203
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 539,
+          "y": 205
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            539,
+            205
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 642,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            642,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 588,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 678,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            678,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 486,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 574,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 662,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 750,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            750,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 664,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 751,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            751,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 478,
+          "y": 491
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 475,
+          "y": 481
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 675,
+          "y": 481
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            675,
+            481
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 494,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 581,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 669,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 758,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            758,
+            291
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 488,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 576,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 664,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 752,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            752,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 487,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 575,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 663,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            663,
+            292
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 477,
+          "y": 49
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 472,
+          "y": 65
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            472,
+            65
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 227
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-crate-labyrinth-author-batch"
+    }
+  },
+  "enigma-icy-causeway": {
+    "game": "Enigma",
+    "game_id": "icy-causeway",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Avoid water; losing the marble fails the task. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 360,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 50000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "low friction",
+          "water hazard",
+          "return crossings"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Momentum persists on a three-cell ice bridge with lethal sides; each return crossing needs controlled approach."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 72
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 102
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 87
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 88
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 196
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 546,
+          "y": 174
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            546,
+            174
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 542
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            542
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 544,
+          "y": 322
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 559,
+          "y": 219
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 581,
+          "y": 215
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 602,
+          "y": 207
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 623,
+          "y": 205
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 644,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 394,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 375,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 386,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 388,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 392,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 394,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 403,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 557,
+          "y": 204
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 558,
+          "y": 359
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 557,
+          "y": 424
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 556,
+          "y": 394
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 557,
+          "y": 409
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 402,
+          "y": 408
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 402,
+          "y": 300
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 349,
+          "y": 322
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 99,
+          "y": 72
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            99,
+            72
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 254,
+          "y": 283
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 240,
+          "y": 370
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 218,
+          "y": 372
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 197,
+          "y": 379
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 176,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 154,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 404,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 423,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 412,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 410,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 405,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 403,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 393,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 239,
+          "y": 381
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 239,
+          "y": 536
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            239,
+            536
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 357
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 326
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 342
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 341
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 233
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 608,
+          "y": 255
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            608,
+            255
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 42
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "drag",
+          "from": [
+            650,
+            42
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 551,
+          "y": 266
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 565,
+          "y": 368
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 587,
+          "y": 372
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 608,
+          "y": 380
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 630,
+          "y": 382
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 651,
+          "y": 382
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 382,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 393,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 395,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 401,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 300
+        },
+        {
+          "type": "mouse_move",
+          "x": 411,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 565,
+          "y": 383
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 565,
+          "y": 228
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 564,
+          "y": 163
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-icy-causeway-author-batch"
+    }
+  },
+  "enigma-gated-memory": {
+    "game": "Enigma",
+    "game_id": "gated-memory",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 360,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 50000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "four-color memory",
+          "gated regions",
+          "navigation interference"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Four pairs are interleaved across controlled chambers, increasing memory interference and revisitation cost."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 508,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 184
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 152
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 511,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 571,
+          "y": 138
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            571,
+            138
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 402,
+          "y": 184
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 510,
+          "y": 181
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 514,
+          "y": 241
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 622,
+          "y": 243
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 625,
+          "y": 303
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 625,
+          "y": 368
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 625,
+          "y": 335
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 625,
+          "y": 350
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 517,
+          "y": 349
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 513,
+          "y": 289
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 405,
+          "y": 287
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 402,
+          "y": 227
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 247,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 182,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 211,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 196,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 305,
+          "y": 225
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 308,
+          "y": 285
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 416,
+          "y": 287
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 419,
+          "y": 347
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 479,
+          "y": 350
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 481,
+          "y": 504
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 541,
+          "y": 505
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            541,
+            505
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 403,
+          "y": 400
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 403,
+          "y": 465
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 403,
+          "y": 432
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 402,
+          "y": 447
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 294,
+          "y": 446
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 291,
+          "y": 201
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 293,
+          "y": 216
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 184,
+          "y": 218
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 182,
+          "y": 278
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            182,
+            278
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 200,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 203,
+          "y": 539
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 206,
+          "y": 523
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            206,
+            523
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 357
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 327
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 342
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 600,
+          "y": 342
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 597,
+          "y": 97
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 594,
+          "y": 112
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 702,
+          "y": 114
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 705,
+          "y": 174
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            705,
+            174
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 600,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 597,
+          "y": 539
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 594,
+          "y": 523
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 522
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 749,
+          "y": 322
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            749,
+            322
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 459,
+          "y": 295
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 462,
+          "y": 188
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 462,
+          "y": 123
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 462,
+          "y": 156
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 461,
+          "y": 141
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 353,
+          "y": 141
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 350,
+          "y": 386
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 351,
+          "y": 371
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 101,
+          "y": 370
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 57,
+          "y": 369
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 58,
+          "y": 119
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 58,
+          "y": 75
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            58,
+            75
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 292,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 289,
+          "y": 353
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 229,
+          "y": 356
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 227,
+          "y": 556
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            227,
+            556
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 357
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 332
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 347
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 460,
+          "y": 346
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 462,
+          "y": 146
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 570,
+          "y": 149
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 573,
+          "y": 211
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            573,
+            211
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 600,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 597,
+          "y": 539
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 594,
+          "y": 524
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            594,
+            524
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 645,
+          "y": 290
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 630,
+          "y": 291
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 628,
+          "y": 356
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 628,
+          "y": 326
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 628,
+          "y": 341
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 473,
+          "y": 340
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 473,
+          "y": 400
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 229,
+          "y": 402
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 243,
+          "y": 402
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 245,
+          "y": 157
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 244,
+          "y": 172
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 244,
+          "y": 107
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 244,
+          "y": 135
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 244,
+          "y": 120
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 121
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 321
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 599,
+          "y": 318
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 591,
+          "y": 314
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 591,
+          "y": 206
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 591,
+          "y": 141
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-gated-memory-author-batch"
+    }
+  },
+  "enigma-keys-and-causeway": {
+    "game": "Enigma",
+    "game_id": "keys-and-causeway",
+    "instruction": "Guide the black marble to open every matching pair of Oxyd stones in this level. Touch two stones of the same color consecutively; remember revealed colors. Avoid water; losing the marble fails the task. Use the native objects and terrain shown in the level.",
+    "rules": "Mouse motion applies force to the marble; inertia and floor friction are the original Enigma physics. Wait to let it coast. Match all stones to complete the level. Each wait advances a fixed number of 10 ms simulation steps. Hold the middle mouse button while repositioning the pointer to avoid applying force (the native Ignore Movement option). The pointer starts at (400, 292). The pause/game-switch menu is disabled for this task. Marble death ends the episode even if native spare lives remain. Restarting or loading another level fails the task. All original item, door, box and terrain behavior is retained.",
+    "max_decisions": 360,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 50000,
+      "update_ms": 10,
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "two key codes",
+          "hazard crossing",
+          "ordered exploration",
+          "memory"
+        ],
+        "difficulty_rationale": "Author estimate, pending human/model calibration: Two distinct keys and locks span a water-divided middle chamber; wrong approaches cost recovery or life."
+      }
+    },
+    "reference": {
+      "provenance": "fixture-author: real Episode/PyAutoGUI desktop; private native telemetry informed author planning, not an autonomous-model score",
+      "viewport": [
+        800,
+        632
+      ],
+      "actions": [
+        {
+          "type": "mouse_move",
+          "x": 340,
+          "y": 292
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 137
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 72
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 102
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 87
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 338,
+          "y": 288
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 284
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 493,
+          "y": 83
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            493,
+            83
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 227
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 253
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 238
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 459,
+          "y": 239
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 462,
+          "y": 179
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 662,
+          "y": 177
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 658,
+          "y": 68
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 717,
+          "y": 65
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 719,
+          "y": 315
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 360
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 425
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 396
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 411
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 718,
+          "y": 471
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            718,
+            471
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 695,
+          "y": 293
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 693,
+          "y": 353
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 693,
+          "y": 418
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 693,
+          "y": 385
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 693,
+          "y": 400
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 443,
+          "y": 399
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 302,
+          "y": 400
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 304,
+          "y": 200
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 54,
+          "y": 203
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            54,
+            203
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 356,
+          "y": 294
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 358,
+          "y": 539
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 357,
+          "y": 523
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            357,
+            523
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 357
+        },
+        {
+          "type": "wait",
+          "duration_ms": 450
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 328
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 343
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 343
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 555,
+          "y": 143
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            555,
+            143
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 644,
+          "y": 295
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 629,
+          "y": 297
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 628,
+          "y": 497
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            628,
+            497
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 650,
+          "y": 289
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 694,
+          "y": 287
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            694,
+            287
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 47
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "mouse_move",
+          "x": 399,
+          "y": 62
+        },
+        {
+          "type": "wait",
+          "duration_ms": 1200
+        },
+        {
+          "type": "drag",
+          "from": [
+            399,
+            62
+          ],
+          "to": [
+            400,
+            292
+          ],
+          "button": "middle",
+          "duration_ms": 100
+        },
+        {
+          "type": "mouse_move",
+          "x": 400,
+          "y": 227
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/enigma-keys-and-causeway-author-batch"
+    }
+  }
+}

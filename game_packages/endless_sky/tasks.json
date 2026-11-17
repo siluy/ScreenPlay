@@ -1,0 +1,2231 @@
+{
+  "endless-sky-manifest": {
+    "game": "Endless Sky",
+    "game_id": "manifest",
+    "instruction": "Buy exactly 8 tons of Food and 4 tons of Metal. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 100,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ngoal \"Food\" 8\ngoal \"Metal\" 4\n",
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "two_category_purchase"
+        ],
+        "difficulty_rationale": "Independent purchases, spare capacity and generous cash allow correction. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-manifest-author-outfits"
+    }
+  },
+  "endless-sky-rebalance": {
+    "game": "Endless Sky",
+    "game_id": "rebalance",
+    "instruction": "Sell the initial 4 Clothing; finish with exactly 2 Food and 3 Metal. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 100,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ncargo \"Clothing\" 4\ngoal \"Food\" 2\ngoal \"Metal\" 3\n",
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "sell_then_buy"
+        ],
+        "difficulty_rationale": "One unwanted cargo category with ample cash and space. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-rebalance-author-outfits"
+    }
+  },
+  "endless-sky-clear-hold": {
+    "game": "Endless Sky",
+    "game_id": "clear-hold",
+    "instruction": "Liquidate all starting commodities (5 Clothing and 3 Metal), leaving an empty hold. Finish on New Boston with at least 32,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 32000\ncrew 1\ncargo \"Clothing\" 5\ncargo \"Metal\" 3\n",
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "liquidation"
+        ],
+        "difficulty_rationale": "Recognize sale direction and empty-hold completion; no allocation choices. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-clear-hold-author-outfits"
+    }
+  },
+  "endless-sky-hire-relief": {
+    "game": "Endless Sky",
+    "game_id": "hire-relief",
+    "instruction": "Hire one extra crew member for the empty Shuttle. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with exactly 2 total crew (including the pilot). Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ngoalcrew 2\n",
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "crew_management"
+        ],
+        "difficulty_rationale": "Single native hiring operation; no cargo or credit dependency. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 830,
+          "y": 592
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 557
+        },
+        {
+          "type": "click",
+          "x": 690,
+          "y": 739
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-hire-relief-author-outfits"
+    }
+  },
+  "endless-sky-medical-kit": {
+    "game": "Endless Sky",
+    "game_id": "medical-kit",
+    "instruction": "Prepare exactly 4 tons of Medical supplies in the empty hold. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ngoal \"Medical\" 4\n",
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "commodity_selection"
+        ],
+        "difficulty_rationale": "Identify a less familiar commodity row, without scarce resources. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-medical-kit-author-outfits"
+    }
+  },
+  "endless-sky-full-hold-exchange": {
+    "game": "Endless Sky",
+    "game_id": "full-hold-exchange",
+    "instruction": "Replace the full hold of 20 Clothing with exactly 10 Food and 10 Metal. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ncargo \"Clothing\" 20\ngoal \"Food\" 10\ngoal \"Metal\" 10\n",
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "capacity_release",
+          "replacement_manifest"
+        ],
+        "difficulty_rationale": "A full hold blocks purchases until sales release capacity. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-full-hold-exchange-author-outfits"
+    }
+  },
+  "endless-sky-retain-equipment": {
+    "game": "Endless Sky",
+    "game_id": "retain-equipment",
+    "instruction": "Finish with exactly 6 Equipment and 6 Medical; initial cargo is 6 Equipment, 8 Clothing and 4 Metal. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 1\ncargo \"Equipment\" 6\ncargo \"Clothing\" 8\ncargo \"Metal\" 4\ngoal \"Equipment\" 6\ngoal \"Medical\" 6\n",
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "selective_liquidation",
+          "retained_inventory"
+        ],
+        "difficulty_rationale": "Must distinguish stock to retain from stock to sell before buying replacements. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-retain-equipment-author-outfits"
+    }
+  },
+  "endless-sky-reduce-payroll": {
+    "game": "Endless Sky",
+    "game_id": "reduce-payroll",
+    "instruction": "Reduce the crew of 4 to the pilot alone and add 4 Metal while retaining 6 Food. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with exactly 1 total crew (including the pilot). Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 30000\nmincash 20000\ncrew 4\ncargo \"Food\" 6\ngoal \"Food\" 6\ngoal \"Metal\" 4\ngoalcrew 1\n",
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "crew_management",
+          "retained_inventory"
+        ],
+        "difficulty_rationale": "Two different native panels and an exact retained-cargo constraint. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 830,
+          "y": 592
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 557
+        },
+        {
+          "type": "click",
+          "x": 610,
+          "y": 731
+        },
+        {
+          "type": "click",
+          "x": 610,
+          "y": 731
+        },
+        {
+          "type": "click",
+          "x": 610,
+          "y": 731
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-reduce-payroll-author-outfits"
+    }
+  },
+  "endless-sky-economy-basket": {
+    "game": "Endless Sky",
+    "game_id": "economy-basket",
+    "instruction": "Buy a total of exactly 12 tons drawn only from Food and Clothing, with at least 4 tons of each. Starting cash is 23,500 credits. Finish on New Boston with at least 20,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 23500\nmincash 20000\ncrew 1\nbasket \"Food\" 4\nbasket \"Clothing\" 4\nbaskettotal 12\n",
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "allocation_choice",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "Several cargo allocations satisfy volume; price differences and the reserve constrain choices. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 525
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-economy-basket-author-outfits"
+    }
+  },
+  "endless-sky-fund-medical": {
+    "game": "Endless Sky",
+    "game_id": "fund-medical",
+    "instruction": "Starting with 8 Luxury Goods and only 1,000 credits, sell that stock to fund exactly 10 Medical. Finish on New Boston with at least 4,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 1000\nmincash 4000\ncrew 1\ncargo \"Luxury Goods\" 8\ngoal \"Medical\" 10\n",
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "sale_finances_purchase",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "Purchase depends on converting endowed stock to spendable cash first. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-fund-medical-author-outfits"
+    }
+  },
+  "endless-sky-relief-choice": {
+    "game": "Endless Sky",
+    "game_id": "relief-choice",
+    "instruction": "From a full hold of 10 Luxury Goods and 10 Metal, retain exactly 4 Metal and load exactly 16 additional tons drawn only from Food and Medical, with at least 6 of each. Starting cash is 1,000. Finish on New Boston with at least 8,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 1000\nmincash 8000\ncrew 1\ncargo \"Luxury Goods\" 10\ncargo \"Metal\" 10\ngoal \"Metal\" 4\nbasket \"Food\" 6\nbasket \"Medical\" 6\nbaskettotal 16\n",
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "capacity_release",
+          "sale_finances_purchase",
+          "allocation_choice",
+          "retained_inventory"
+        ],
+        "difficulty_rationale": "Couples sales, reserved stock, full-hold allocation and a cash reserve; feasible substitutions have different costs. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 545
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-relief-choice-author-outfits"
+    }
+  },
+  "endless-sky-crew-and-full-manifest": {
+    "game": "Endless Sky",
+    "game_id": "crew-and-full-manifest",
+    "instruction": "Starting with 20 Clothing, 16,000 credits and a crew of 4, prepare exactly 8 Medical, 8 Equipment and 4 Food and reduce total crew to 2. Finish on New Boston with at least 9,900 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with exactly 2 total crew (including the pilot). Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 16000\nmincash 9900\ncrew 4\ncargo \"Clothing\" 20\ngoal \"Medical\" 8\ngoal \"Equipment\" 8\ngoal \"Food\" 4\ngoalcrew 2\n",
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "capacity_release",
+          "three_category_manifest",
+          "crew_management",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "Three-category full-capacity replacement plus staffing requires preserving both resource and panel state. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 830,
+          "y": 592
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 557
+        },
+        {
+          "type": "click",
+          "x": 610,
+          "y": 731
+        },
+        {
+          "type": "click",
+          "x": 610,
+          "y": 731
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-crew-and-full-manifest-author-outfits"
+    }
+  },
+  "endless-sky-industrial-allocation": {
+    "game": "Endless Sky",
+    "game_id": "industrial-allocation",
+    "instruction": "Starting with 20,000 credits and a full hold (10 Food, 10 Clothing), replace all cargo with exactly 20 tons drawn only from Equipment, Industrial and Electronics, at least 4 of each. Finish on New Boston with at least 11,900 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 20000\nmincash 11900\ncrew 1\ncargo \"Food\" 10\ncargo \"Clothing\" 10\nbasket \"Equipment\" 4\nbasket \"Industrial\" 4\nbasket \"Electronics\" 4\nbaskettotal 20\n",
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "three_way_allocation",
+          "capacity_release",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "A full hold and three minimums make allocation interdependent; expensive mixes violate the cash reserve. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 625
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 625
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 625
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 625
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-industrial-allocation-author-outfits"
+    }
+  },
+  "endless-sky-premium-swap": {
+    "game": "Endless Sky",
+    "game_id": "premium-swap",
+    "instruction": "Starting with 8 Heavy Metals, 6 Medical and 6 Food, retain exactly 6 Medical and replace the rest with exactly 6 Electronics and 8 Luxury Goods. Starting cash is 15,000. Finish on New Boston with at least 9,900 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 15000\nmincash 9900\ncrew 1\ncargo \"Heavy Metals\" 8\ncargo \"Medical\" 6\ncargo \"Food\" 6\ngoal \"Medical\" 6\ngoal \"Electronics\" 6\ngoal \"Luxury Goods\" 8\n",
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "selective_liquidation",
+          "capacity_release",
+          "high_value_purchase",
+          "cash_constraint"
+        ],
+        "difficulty_rationale": "Retained medical stock consumes capacity while high-value replacements consume most available trade proceeds. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 665
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 645
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 685
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-premium-swap-author-outfits"
+    }
+  },
+  "endless-sky-staffed-relief-basket": {
+    "game": "Endless Sky",
+    "game_id": "staffed-relief-basket",
+    "instruction": "Starting with 12 Luxury Goods, 8 Clothing, 500 credits and the pilot alone, prepare exactly 4 Equipment plus 16 tons drawn only from Food and Medical, at least 6 of each; hire two extra crew. Finish on New Boston with at least 7,000 credits, keep the original Shuttle as your only ship, and never take a loan. Carry no commodities beyond those allowed in the goal. Finish with exactly 3 total crew (including the pilot). Finish with the original installed outfits unchanged.",
+    "rules": "Use native Trading and Hire Crew panels. Trading moves one ton per unmodified click. The Shuttle has 20 tons of cargo capacity; sales free space and provide credits. The simulator advances only during authorized actions; thinking time is frozen. Cargo, final credits, crew when specified, original-ship identity, planet and any loan are checked. Starting stock and crew are fixture endowments, not trade income.",
+    "max_decisions": 160,
+    "time_mode": "fixed_update_budget",
+    "undo_allowed": false,
+    "parameters": {
+      "max_updates": 15000,
+      "update_ms": 17,
+      "native_fixture": "credits 500\nmincash 7000\ncrew 1\ncargo \"Luxury Goods\" 12\ncargo \"Clothing\" 8\ngoal \"Equipment\" 4\ngoalcrew 3\nbasket \"Food\" 6\nbasket \"Medical\" 6\nbaskettotal 16\n",
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "sale_finances_purchase",
+          "allocation_choice",
+          "capacity_release",
+          "crew_management"
+        ],
+        "difficulty_rationale": "Cash must first be released; allocation, exact retained-free manifest and staffing span independent panels. Author estimate; requires human/model calibration."
+      }
+    },
+    "reference": {
+      "provenance": "Fixture-author PyAutoGUI desktop replay; not an autonomous model rollout.",
+      "viewport": [
+        1100,
+        752
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 148,
+          "y": 483
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 656
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 525
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 629,
+          "y": 685
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 505
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 585
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 568,
+          "y": 605
+        },
+        {
+          "type": "click",
+          "x": 830,
+          "y": 592
+        },
+        {
+          "type": "click",
+          "x": 640,
+          "y": 557
+        },
+        {
+          "type": "click",
+          "x": 690,
+          "y": 731
+        },
+        {
+          "type": "click",
+          "x": 690,
+          "y": 731
+        }
+      ],
+      "verified_run": "runs/v1-acceptance/endless-sky-staffed-relief-basket-author-outfits"
+    }
+  }
+}

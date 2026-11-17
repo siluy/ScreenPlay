@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gameworld-native"
+version = "0.2.3"
+description = "ScreenPlay native-game tasks with shared human-study and developer interfaces"
+requires-python = ">=3.12"
+dependencies = [
+  "pillow>=11,<13",
+  "pydantic>=2.10,<3",
+  "pyautogui==0.9.54",
+  "pyobjc-framework-Cocoa>=11; sys_platform == 'darwin'",
+  "pyobjc-framework-Quartz>=11; sys_platform == 'darwin'",
+]
+
+[project.optional-dependencies]
+native-games = [
+  "pygame-ce==2.5.8", "numpy>=2,<3", "polib==1.2.0",
+  "pysol-cards==0.24.0", "configobj==5.0.9", "random2==1.0.2", "attrs>=24",
+]
+
+[project.scripts]
+gameworld = "gameworld.cli:main"
+screenplay-human = "screenplay_human.__main__:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "cmake>=3.28,<4", "ninja>=1.11"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gameworld", "src/gameworld_text", "src/screenplay_human"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

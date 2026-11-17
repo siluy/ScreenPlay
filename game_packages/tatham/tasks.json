@@ -1,0 +1,2306 @@
+{
+  "fifteen-01": {
+    "game": "Fifteen",
+    "game_id": "3x3:1,2,3,4,5,6,7,0,8",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "1,2,3,4,5,6,7,0,8",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        192,
+        192
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "3 by 3 layout; 1 misplaced tiles and total tile Manhattan distance 1. Exact shortest native multi-tile-click solution: 1 moves. Gap routing must restore row and column ordering without displacing already settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "fifteen-12": {
+    "game": "Fifteen",
+    "game_id": "3x3:1,6,2,5,3,8,4,7,0",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "1,6,2,5,3,8,4,7,0",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        192,
+        192
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "3 by 3 layout; 7 misplaced tiles and total tile Manhattan distance 10. Exact shortest native multi-tile-click solution: 8 moves. Gap routing must restore row and column ordering without displacing already settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "fifteen-24": {
+    "game": "Fifteen",
+    "game_id": "3x3:5,8,2,3,0,4,1,7,6",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "5,8,2,3,0,4,1,7,6",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        192,
+        192
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "3 by 3 layout; 8 misplaced tiles and total tile Manhattan distance 14. Exact shortest native multi-tile-click solution: 15 moves. Gap routing must restore row and column ordering without displacing already settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "net-3x3": {
+    "game": "Net",
+    "game_id": "3x3#42",
+    "instruction": "Rotate the wire tiles until the entire network is connected with no dangling ends.",
+    "rules": "Rotate tiles with left/right click to connect all wires to the central power source. No wires may end without a matching connection. Middle click locks a tile. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "2946e9952",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "local connectivity",
+          "global network consistency"
+        ],
+        "difficulty_rationale": "Board parameters 3x3; 9 tiles require reciprocal local joins and one connected global network; larger boards contain more interacting branches. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        129,
+        129
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96,
+          "button": "left"
+        }
+      ]
+    }
+  },
+  "net-5x5": {
+    "game": "Net",
+    "game_id": "5x5#43",
+    "instruction": "Rotate the wire tiles until the entire network is connected with no dangling ends.",
+    "rules": "Rotate tiles with left/right click to connect all wires to the central power source. No wires may end without a matching connection. Middle click locks a tile. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "3ba728d16847d2899c7d46a68",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "local connectivity",
+          "global network consistency"
+        ],
+        "difficulty_rationale": "Board parameters 5x5; 25 tiles require reciprocal local joins and one connected global network; larger boards contain more interacting branches. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        193,
+        193
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 128,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 128,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 160,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 160,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 160,
+          "button": "left"
+        }
+      ]
+    }
+  },
+  "net-7x7": {
+    "game": "Net",
+    "game_id": "7x7#44",
+    "instruction": "Rotate the wire tiles until the entire network is connected with no dangling ends.",
+    "rules": "Rotate tiles with left/right click to connect all wires to the central power source. No wires may end without a matching connection. Middle click locks a tile. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "c4981c9a1a17ba7d3eb62a6de954d2ad573d9ad65a8181882",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "local connectivity",
+          "global network consistency"
+        ],
+        "difficulty_rationale": "Board parameters 7x7; 49 tiles require reciprocal local joins and one connected global network; larger boards contain more interacting branches. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        257,
+        257
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 32,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 96,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 96,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 128,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 192,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 224,
+          "y": 192,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 224,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 224,
+          "button": "left"
+        }
+      ]
+    }
+  },
+  "untangle-6": {
+    "game": "Untangle",
+    "game_id": "6#42",
+    "instruction": "Reposition the nodes so that no two edges cross.",
+    "rules": "Drag circular nodes to move them. Remove every crossing between edges. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "0-4,0-5,1-2,1-3,1-4,1-5,2-4,3-5,4-5",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "edge crossing detection",
+          "planar spatial rearrangement"
+        ],
+        "difficulty_rationale": "6 nodes, 9 edges, maximum node degree 4; moving high-degree nodes changes several crossing relationships simultaneously. Spatial working-memory load grows with the number of edges that must remain uncrossed. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        256,
+        256
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            128,
+            19
+          ],
+          "to": [
+            32,
+            32
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            222,
+            73
+          ],
+          "to": [
+            160,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            222,
+            182
+          ],
+          "to": [
+            224,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            128,
+            237
+          ],
+          "to": [
+            32,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            34,
+            183
+          ],
+          "to": [
+            96,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            34,
+            73
+          ],
+          "to": [
+            32,
+            96
+          ],
+          "duration_ms": 400
+        }
+      ]
+    }
+  },
+  "untangle-10": {
+    "game": "Untangle",
+    "game_id": "10#43",
+    "instruction": "Reposition the nodes so that no two edges cross.",
+    "rules": "Drag circular nodes to move them. Remove every crossing between edges. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "0-2,0-5,0-8,1-2,1-3,1-4,1-6,2-5,2-8,3-4,3-7,4-6,4-7,5-9,6-7,6-9,7-9",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "edge crossing detection",
+          "planar spatial rearrangement"
+        ],
+        "difficulty_rationale": "10 nodes, 17 edges, maximum node degree 4; moving high-degree nodes changes several crossing relationships simultaneously. Spatial working-memory load grows with the number of edges that must remain uncrossed. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        320,
+        320
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            160,
+            23
+          ],
+          "to": [
+            32,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            241,
+            49
+          ],
+          "to": [
+            288,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            290,
+            118
+          ],
+          "to": [
+            96,
+            32
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            290,
+            202
+          ],
+          "to": [
+            288,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            241,
+            271
+          ],
+          "to": [
+            224,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            160,
+            297
+          ],
+          "to": [
+            32,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            79,
+            271
+          ],
+          "to": [
+            160,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            30,
+            202
+          ],
+          "to": [
+            224,
+            288
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            30,
+            118
+          ],
+          "to": [
+            32,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            79,
+            49
+          ],
+          "to": [
+            32,
+            288
+          ],
+          "duration_ms": 400
+        }
+      ]
+    }
+  },
+  "untangle-15": {
+    "game": "Untangle",
+    "game_id": "15#44",
+    "instruction": "Reposition the nodes so that no two edges cross.",
+    "rules": "Drag circular nodes to move them. Remove every crossing between edges. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "expected_desc": "0-9,0-11,1-2,1-6,1-9,1-12,2-6,2-12,3-7,3-8,3-14,4-5,4-10,4-13,5-6,5-8,5-10,6-8,7-13,8-13,9-11,9-14,10-13,11-12",
+    "parameters": {
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "edge crossing detection",
+          "planar spatial rearrangement"
+        ],
+        "difficulty_rationale": "15 nodes, 24 edges, maximum node degree 4; moving high-degree nodes changes several crossing relationships simultaneously. Spatial working-memory load grows with the number of edges that must remain uncrossed. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        384,
+        384
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            192,
+            28
+          ],
+          "to": [
+            32,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            259,
+            42
+          ],
+          "to": [
+            160,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            314,
+            82
+          ],
+          "to": [
+            160,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            348,
+            141
+          ],
+          "to": [
+            352,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            355,
+            209
+          ],
+          "to": [
+            352,
+            288
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            288,
+            325
+          ],
+          "to": [
+            224,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            226,
+            352
+          ],
+          "to": [
+            352,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            334,
+            274
+          ],
+          "to": [
+            224,
+            352
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            158,
+            352
+          ],
+          "to": [
+            288,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            96,
+            325
+          ],
+          "to": [
+            160,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            50,
+            274
+          ],
+          "to": [
+            288,
+            288
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            29,
+            209
+          ],
+          "to": [
+            32,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            36,
+            141
+          ],
+          "to": [
+            32,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            70,
+            82
+          ],
+          "to": [
+            352,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            125,
+            42
+          ],
+          "to": [
+            224,
+            96
+          ],
+          "duration_ms": 400
+        }
+      ]
+    }
+  },
+  "fifteen-2x3": {
+    "game": "Fifteen",
+    "game_id": "2x3:3,1,5,2,4,0",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "3,1,5,2,4,0",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        144,
+        192
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 48,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "2 by 3 layout; 5 misplaced tiles and total tile Manhattan distance 6. Exact shortest native multi-tile-click solution: 4 moves. Narrow two-column geometry constrains routes around settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "fifteen-4x3": {
+    "game": "Fifteen",
+    "game_id": "4x3:5,1,2,3,6,10,11,4,7,0,9,8",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "5,1,2,3,6,10,11,4,7,0,9,8",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        240,
+        192
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 144
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "4 by 3 layout; 11 misplaced tiles and total tile Manhattan distance 14. Exact optimum not computed. Gap routing must restore row and column ordering without displacing already settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "fifteen-4x4": {
+    "game": "Fifteen",
+    "game_id": "4x4:0,6,5,7,2,1,3,8,9,11,14,4,13,10,15,12",
+    "instruction": "Arrange the numbered tiles in ascending row-major order, with the empty cell at bottom right.",
+    "rules": "Click a tile in the same row or column as the gap to slide it. Undo and restart are allowed. Solve and changing the puzzle are prohibited.",
+    "max_decisions": 200,
+    "expected_desc": "0,6,5,7,2,1,3,8,9,11,14,4,13,10,15,12",
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        240,
+        240
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 192
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 192
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 48
+        },
+        {
+          "type": "click",
+          "x": 48,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 144
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 192
+        },
+        {
+          "type": "click",
+          "x": 144,
+          "y": 192
+        },
+        {
+          "type": "click",
+          "x": 192,
+          "y": 192
+        }
+      ]
+    },
+    "parameters": {
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "gap routing",
+          "ordered tile placement"
+        ],
+        "difficulty_rationale": "4 by 4 layout; 11 misplaced tiles and total tile Manhattan distance 18. Exact optimum not computed. Gap routing must restore row and column ordering without displacing already settled tiles. Author estimate; not empirically calibrated."
+      }
+    }
+  },
+  "net-barriers": {
+    "game": "Net",
+    "game_id": "4x3b0.7#51",
+    "instruction": "Rotate the wire tiles until the entire network is connected with no dangling ends.",
+    "rules": "Rotate tiles with left/right click to connect all wires to the central power source. No wires may end without a matching connection. Middle click locks a tile. Undo is allowed; Solve and changing the puzzle are prohibited. Marked barriers block connections between adjacent cells.",
+    "max_decisions": 400,
+    "parameters": {
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "local connectivity",
+          "global network consistency",
+          "fixed edge barriers"
+        ],
+        "difficulty_rationale": "Board parameters 4x3b0.7; fixed barriers eliminate otherwise plausible joins on the rectangular board. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        161,
+        129
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 64,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 96,
+          "button": "left"
+        }
+      ]
+    },
+    "expected_desc": "6ah732v6dv526v11"
+  },
+  "net-wrapping": {
+    "game": "Net",
+    "game_id": "5x5w#52",
+    "instruction": "Rotate the wire tiles until the entire network is connected with no dangling ends.",
+    "rules": "Rotate tiles with left/right click to connect all wires to the central power source. No wires may end without a matching connection. Middle click locks a tile. Undo is allowed; Solve and changing the puzzle are prohibited. Wires can connect across opposite board edges on this wrapping board.",
+    "max_decisions": 400,
+    "parameters": {
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "local connectivity",
+          "global network consistency",
+          "toroidal boundary connections"
+        ],
+        "difficulty_rationale": "Board parameters 5x5w; opposite edges join, so local edge termination heuristics no longer apply and long-range consistency matters. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        193,
+        193
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 32,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 64,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 32,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 96,
+          "button": "right"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 96,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 128,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 64,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 96,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 128,
+          "y": 160,
+          "button": "left"
+        },
+        {
+          "type": "click",
+          "x": 160,
+          "y": 160,
+          "button": "left"
+        }
+      ]
+    },
+    "expected_desc": "25ae3bd3e21b5c2d388764528"
+  },
+  "untangle-20": {
+    "game": "Untangle",
+    "game_id": "20#53",
+    "instruction": "Reposition the nodes so that no two edges cross.",
+    "rules": "Drag circular nodes to move them. Remove every crossing between edges. Undo is allowed; Solve and changing the puzzle are prohibited.",
+    "max_decisions": 400,
+    "parameters": {
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "edge crossing detection",
+          "planar spatial rearrangement"
+        ],
+        "difficulty_rationale": "20 nodes, 38 edges, maximum node degree 4; moving high-degree nodes changes several crossing relationships simultaneously. Spatial working-memory load grows with the number of edges that must remain uncrossed. Author estimate; not empirically calibrated."
+      }
+    },
+    "reference": {
+      "provenance": "Offline native solution translated to ordinary mouse actions; replayed in native midend without solve. Not an agent rollout.",
+      "viewport": [
+        448,
+        448
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            224,
+            32
+          ],
+          "to": [
+            352,
+            416
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            283,
+            41
+          ],
+          "to": [
+            224,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            337,
+            69
+          ],
+          "to": [
+            288,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            379,
+            111
+          ],
+          "to": [
+            416,
+            416
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            407,
+            165
+          ],
+          "to": [
+            160,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            416,
+            224
+          ],
+          "to": [
+            288,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            407,
+            283
+          ],
+          "to": [
+            416,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            379,
+            337
+          ],
+          "to": [
+            96,
+            352
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            283,
+            407
+          ],
+          "to": [
+            224,
+            352
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            224,
+            416
+          ],
+          "to": [
+            352,
+            288
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            165,
+            407
+          ],
+          "to": [
+            96,
+            160
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            337,
+            379
+          ],
+          "to": [
+            160,
+            416
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            111,
+            379
+          ],
+          "to": [
+            96,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            41,
+            283
+          ],
+          "to": [
+            224,
+            416
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            32,
+            224
+          ],
+          "to": [
+            416,
+            288
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            69,
+            337
+          ],
+          "to": [
+            32,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            41,
+            165
+          ],
+          "to": [
+            352,
+            224
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            69,
+            111
+          ],
+          "to": [
+            352,
+            96
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            111,
+            69
+          ],
+          "to": [
+            32,
+            32
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            165,
+            41
+          ],
+          "to": [
+            224,
+            32
+          ],
+          "duration_ms": 400
+        }
+      ]
+    },
+    "expected_desc": "0-3,0-9,0-10,0-14,1-2,1-5,1-7,1-11,2-5,2-17,2-19,3-10,3-15,4-11,4-12,4-18,4-19,5-6,5-16,6-15,6-16,6-17,7-8,7-9,7-13,8-9,8-14,9-14,10-15,10-16,11-12,11-13,12-13,12-18,13-18,15-16,17-19,18-19"
+  }
+}

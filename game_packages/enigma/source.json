@@ -1,0 +1,12 @@
+{
+  "repo": "https://github.com/Enigma-Game/Enigma.git",
+  "base_commit": "fa918466716e5e393206f68de86dd4b2df2eea71",
+  "license": "GPL-2.0-or-later",
+  "frontend": "original native desktop",
+  "split": "development",
+  "game_package": "enigma",
+  "family": "enigma",
+  "adapter_version": "0.1.0",
+  "fixture_seed": 20260914,
+  "warmup_updates": 100
+}

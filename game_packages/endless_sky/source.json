@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/endless-sky/endless-sky.git",
+  "base_commit": "2e765f8708df81e2a0c86504ae78c9f4811eb1ca",
+  "license": "GPL-3.0-or-later; bundled artwork has per-author licenses in copyright",
+  "frontend": "original native desktop",
+  "split": "development",
+  "game_package": "endless_sky",
+  "family": "endless_sky",
+  "adapter_version": "0.1.0"
+}

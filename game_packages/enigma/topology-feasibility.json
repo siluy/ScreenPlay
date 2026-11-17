@@ -1,0 +1,245 @@
+[
+  {
+    "level": "crate-labyrinth",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [
+      [
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      [
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ]
+      ],
+      [
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          8
+        ]
+      ],
+      [
+        [
+          14,
+          8
+        ],
+        [
+          15,
+          8
+        ]
+      ]
+    ],
+    "reachable_cells_after_controls": 136,
+    "open_gates": [],
+    "search_states": 21,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "crate-passage",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [
+      [
+        [
+          10,
+          6
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      [
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          6
+        ]
+      ]
+    ],
+    "reachable_cells_after_controls": 185,
+    "open_gates": [],
+    "search_states": 3,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "friction-slalom",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 184,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "gated-memory",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 168,
+    "open_gates": [
+      "D",
+      "E"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "ice-crossing",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 196,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "icy-causeway",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 130,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "key-switch-cascade",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 172,
+    "open_gates": [
+      "D",
+      "E"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "keyed-chamber",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 185,
+    "open_gates": [
+      "D"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "keys-and-causeway",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 166,
+    "open_gates": [
+      "D",
+      "E"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "oxyd-memory",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 194,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "oxyd-pair",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 196,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "sequential-gates",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 174,
+    "open_gates": [
+      "D",
+      "E"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "switch-gate",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 185,
+    "open_gates": [
+      "D"
+    ],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "water-causeway",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 146,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  },
+  {
+    "level": "winding-memory",
+    "xml_well_formed": true,
+    "abstract_accessible_all_oxyd": true,
+    "box_push_witness": [],
+    "reachable_cells_after_controls": 176,
+    "open_gates": [],
+    "search_states": 1,
+    "native_desktop_verified": false,
+    "scope": "Cell reachability and box clearance; excludes continuous physics, collisions at speed, inventory UI and native object dispatch."
+  }
+]

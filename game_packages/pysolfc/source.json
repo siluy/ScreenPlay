@@ -1,0 +1,18 @@
+{
+  "repo": "https://github.com/shlomif/PySolFC.git",
+  "base_commit": "734cdd3b4d39c6cd5d1359eeebbf96068405c502",
+  "license": "GPL-3.0-or-later",
+  "frontend": "original native desktop",
+  "split": "development",
+  "assets": {
+    "repo": "https://github.com/shlomif/PySolFC-Cardsets.git",
+    "base_commit": "6d382152d4c49169022785fcc629ff98b13e04b7",
+    "directories": [
+      "cardset-2000"
+    ],
+    "license": "See upstream cardset-2000 COPYRIGHT"
+  },
+  "game_package": "pysolfc",
+  "family": "pysolfc",
+  "adapter_version": "0.1.0"
+}

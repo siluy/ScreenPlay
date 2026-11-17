@@ -1,0 +1,13 @@
+{
+  "type": "openai-compatible",
+  "base_url_env": "GAMEWORLD_BASE_URL",
+  "model_env": "GAMEWORLD_MODEL",
+  "api_key_env": "GAMEWORLD_API_KEY",
+  "output_mode": "tools",
+  "max_output_tokens": 2048,
+  "token_limit_field": "max_tokens",
+  "history_turns": 8,
+  "history_images": 0,
+  "memory_chars": 4000,
+  "timeout_seconds": 60
+}

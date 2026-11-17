@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<el:level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enigma-game.org/schema/level/1 level.xsd" xmlns:el="http://enigma-game.org/schema/level/1">
+<el:protected><el:info el:type="level">
+<el:identity el:title="GameWorld: icy-causeway" el:id="gameworld-icy-causeway"/>
+<el:version el:score="1" el:release="1" el:revision="1" el:status="stable"/>
+<el:author el:name="GameWorld"/><el:copyright>GameWorld contributors</el:copyright>
+<el:license el:type="GPL v2.0 or above" el:open="true"/>
+<el:compatibility el:enigma="1.10"/><el:modes el:easy="false" el:single="true" el:network="false"/>
+<el:score el:easy="-" el:difficult="-"/></el:info><el:luamain><![CDATA[
+ti[' '] = {'fl_lawn'}
+ti['#'] = {'st_fake_oxyda'} .. ti[' ']
+ti['@'] = {'#ac_marble'} .. ti[' ']
+ti['I'] = {'fl_ice'}
+ti['C'] = {'fl_sand'}
+ti['~'] = {'fl_water'}
+ti['B'] = {'st_box_wood'} .. ti[' ']
+ti['D'] = {'st_door', name='gate_one', flavor='a'} .. ti[' ']
+ti['E'] = {'st_door', name='gate_two', flavor='a'} .. ti[' ']
+ti['S'] = {'st_switch', target='gate_one'} .. ti[' ']
+ti['T'] = {'st_switch', target='gate_two'} .. ti[' ']
+ti['K'] = {'st_key', code=1, target='gate_one'} .. ti[' ']
+ti['L'] = {'st_key', code=2, target='gate_two'} .. ti[' ']
+ti['k'] = {'it_key', code=1} .. ti[' ']
+ti['l'] = {'it_key', code=2} .. ti[' ']
+ti['O'] = {'st_oxyd', flavor='b', oxydcolor=0} .. ti[' ']
+ti['P'] = {'st_oxyd', flavor='b', oxydcolor=1} .. ti[' ']
+ti['Q'] = {'st_oxyd', flavor='b', oxydcolor=2} .. ti[' ']
+ti['R'] = {'st_oxyd', flavor='b', oxydcolor=3} .. ti[' ']
+wo(ti, ' ', {"####################", "#     ~~~~~~~~     #", "# O   ~~~~~~~~   P #", "#     ~~~~~~~~     #", "#     ~~~~~~~~     #", "#     IIIIIIII     #", "#  @  IIIIIIII     #", "#     IIIIIIII     #", "#     ~~~~~~~~     #", "#     ~~~~~~~~     #", "# P   ~~~~~~~~   O #", "#     ~~~~~~~~     #", "####################"})
+]]></el:luamain><el:i18n><el:string el:key="title"><el:english el:translate="false"/></el:string></el:i18n></el:protected></el:level>

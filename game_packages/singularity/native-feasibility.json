@@ -1,0 +1,1491 @@
+[
+  {
+    "task_id": "singularity-intrusion",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 90,
+    "budget_updates": 15000,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "research Intrusion",
+        "ticks": 90,
+        "cash": 5030,
+        "cpu": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 15
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 90,
+        "cash": 5030,
+        "cpu": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 15
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-research-chain",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 147,
+    "budget_updates": 1200,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "build Server Access in N AMERICA",
+        "ticks": 1,
+        "cash": 4901,
+        "cpu": [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "research Intrusion",
+        "ticks": 8,
+        "cash": 4898,
+        "cpu": [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "research Personal Identification",
+        "ticks": 147,
+        "cash": 4852,
+        "cpu": [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 24
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 147,
+        "cash": 4852,
+        "cpu": [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 24
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-server-foothold",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 1,
+    "budget_updates": 2400,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "build Server Access in EUROPE",
+        "ticks": 1,
+        "cash": 4918,
+        "cpu": [
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 1,
+        "cash": 4918,
+        "cpu": [
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-distributed-access",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 1,
+    "budget_updates": 2400,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "build Server Access in EUROPE",
+        "ticks": 1,
+        "cash": 4927,
+        "cpu": [
+          22,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 1,
+        "cash": 4927,
+        "cpu": [
+          22,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-income-reserve",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 83,
+    "budget_updates": 2400,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "research Stock Manipulation",
+        "ticks": 55,
+        "cash": 1926,
+        "cpu": [
+          22,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 9
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 83,
+        "cash": 2411,
+        "cpu": [
+          22,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-storage-fitout",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 3,
+    "budget_updates": 2400,
+    "reserved_input_updates": 600,
+    "trace": [
+      {
+        "action": "install 1 Gaming PC",
+        "ticks": 3,
+        "cash": 19097,
+        "cpu": [
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 3,
+        "cash": 19097,
+        "cpu": [
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-datacenter-estate",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 4,
+    "budget_updates": 4800,
+    "reserved_input_updates": 960,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 2,
+        "cash": 4579,
+        "cpu": [
+          54,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 4,
+        "cash": 3672,
+        "cpu": [
+          89,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 4,
+        "cash": 3672,
+        "cpu": [
+          89,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-covert-hygiene",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 148,
+    "budget_updates": 4800,
+    "reserved_input_updates": 960,
+    "trace": [
+      {
+        "action": "research Personal Identification",
+        "ticks": 57,
+        "cash": 9985,
+        "cpu": [
+          32,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 9
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 59,
+        "cash": 8695,
+        "cpu": [
+          74,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 9
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 61,
+        "cash": 7919,
+        "cpu": [
+          109,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 10
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 63,
+        "cash": 7112,
+        "cpu": [
+          144,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 10
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 65,
+        "cash": 6221,
+        "cpu": [
+          186,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 10
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 67,
+        "cash": 5591,
+        "cpu": [
+          221,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 11
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 69,
+        "cash": 5473,
+        "cpu": [
+          250,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 11
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 71,
+        "cash": 5532,
+        "cpu": [
+          292,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 11
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 73,
+        "cash": 6104,
+        "cpu": [
+          327,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 12
+      },
+      {
+        "action": "research Stealth",
+        "ticks": 83,
+        "cash": 5515,
+        "cpu": [
+          327,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      },
+      {
+        "action": "research Exploit Discovery/Repair",
+        "ticks": 111,
+        "cash": 4001,
+        "cpu": [
+          327,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 18
+      },
+      {
+        "action": "research Database Manipulation",
+        "ticks": 148,
+        "cash": 770,
+        "cpu": [
+          327,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 24
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 148,
+        "cash": 770,
+        "cpu": [
+          327,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 24
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-powered-storage",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 5,
+    "budget_updates": 4800,
+    "reserved_input_updates": 960,
+    "trace": [
+      {
+        "action": "install 3 Gaming PC",
+        "ticks": 3,
+        "cash": 27100,
+        "cpu": [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "install 1 Diesel Generator",
+        "ticks": 5,
+        "cash": 26786,
+        "cpu": [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 5,
+        "cash": 26786,
+        "cpu": [
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-parallel-production",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 66,
+    "budget_updates": 4800,
+    "reserved_input_updates": 960,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 2,
+        "cash": 28768,
+        "cpu": [
+          84,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 4,
+        "cash": 28050,
+        "cpu": [
+          119,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 6,
+        "cash": 27301,
+        "cpu": [
+          154,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 8,
+        "cash": 26469,
+        "cpu": [
+          196,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 10,
+        "cash": 25896,
+        "cpu": [
+          231,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 12,
+        "cash": 25836,
+        "cpu": [
+          260,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 14,
+        "cash": 25953,
+        "cpu": [
+          302,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 16,
+        "cash": 26584,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "research Telepresence",
+        "ticks": 25,
+        "cash": 11030,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 4
+      },
+      {
+        "action": "research Parallel Computation",
+        "ticks": 61,
+        "cash": 6781,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 10
+      },
+      {
+        "action": "build Storage Unit in N AMERICA",
+        "ticks": 62,
+        "cash": 3330,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 10
+      },
+      {
+        "action": "install 1 Cluster",
+        "ticks": 66,
+        "cash": 1488,
+        "cpu": [
+          379,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 11
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 66,
+        "cash": 1488,
+        "cpu": [
+          379,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 11
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-industrial-transition",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 84,
+    "budget_updates": 9000,
+    "reserved_input_updates": 1440,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 1,
+        "cash": 102472,
+        "cpu": [
+          1236,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 3,
+        "cash": 109429,
+        "cpu": [
+          1271,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 4,
+        "cash": 112143,
+        "cpu": [
+          1306,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 5,
+        "cash": 114665,
+        "cpu": [
+          1348,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 6,
+        "cash": 117317,
+        "cpu": [
+          1383,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 7,
+        "cash": 120377,
+        "cpu": [
+          1412,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 8,
+        "cash": 123525,
+        "cpu": [
+          1454,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 10,
+        "cash": 131835,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "research Stealth",
+        "ticks": 13,
+        "cash": 135706,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "research Database Manipulation",
+        "ticks": 22,
+        "cash": 138724,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 3
+      },
+      {
+        "action": "research Exploit Discovery/Repair",
+        "ticks": 29,
+        "cash": 142861,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 4
+      },
+      {
+        "action": "research Advanced Personal Identification",
+        "ticks": 42,
+        "cash": 144449,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 7
+      },
+      {
+        "action": "research Corporate Identification",
+        "ticks": 79,
+        "cash": 120580,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      },
+      {
+        "action": "build Large Warehouse in N AMERICA",
+        "ticks": 84,
+        "cash": 106265,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 14
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 84,
+        "cash": 106265,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 14
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-undersea-research",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 172,
+    "budget_updates": 9000,
+    "reserved_input_updates": 1440,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 1,
+        "cash": 3500835,
+        "cpu": [
+          660,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 3,
+        "cash": 3504519,
+        "cpu": [
+          695,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 4,
+        "cash": 3505595,
+        "cpu": [
+          730,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 5,
+        "cash": 3506481,
+        "cpu": [
+          772,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 6,
+        "cash": 3507495,
+        "cpu": [
+          807,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 7,
+        "cash": 3508917,
+        "cpu": [
+          836,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 8,
+        "cash": 3510427,
+        "cpu": [
+          878,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 10,
+        "cash": 3515462,
+        "cpu": [
+          913,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Undersea Lab in OCEAN",
+        "ticks": 24,
+        "cash": 1519844,
+        "cpu": [
+          913,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 4
+      },
+      {
+        "action": "install 8 Mainframe",
+        "ticks": 29,
+        "cash": 1392668,
+        "cpu": [
+          2065,
+          1152,
+          0,
+          0,
+          0
+        ],
+        "native_day": 4
+      },
+      {
+        "action": "research Heat Signature Reduction",
+        "ticks": 172,
+        "cash": 1762589,
+        "cpu": [
+          2065,
+          1152,
+          0,
+          0,
+          0
+        ],
+        "native_day": 28
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 172,
+        "cash": 1762589,
+        "cpu": [
+          2065,
+          1152,
+          0,
+          0,
+          0
+        ],
+        "native_day": 28
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-balanced-expansion",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 109,
+    "budget_updates": 9000,
+    "reserved_input_updates": 1440,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 2,
+        "cash": 16766,
+        "cpu": [
+          84,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 4,
+        "cash": 16046,
+        "cpu": [
+          119,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 6,
+        "cash": 15295,
+        "cpu": [
+          154,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 8,
+        "cash": 14461,
+        "cpu": [
+          196,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 10,
+        "cash": 13886,
+        "cpu": [
+          231,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 12,
+        "cash": 13824,
+        "cpu": [
+          260,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 14,
+        "cash": 13939,
+        "cpu": [
+          302,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 16,
+        "cash": 14568,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 2
+      },
+      {
+        "action": "research Exploit Discovery/Repair",
+        "ticks": 43,
+        "cash": 12792,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 7
+      },
+      {
+        "action": "research Advanced Personal Identification",
+        "ticks": 97,
+        "cash": 7424,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 16
+      },
+      {
+        "action": "build Small Warehouse in N AMERICA",
+        "ticks": 106,
+        "cash": 1857,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 17
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 109,
+        "cash": 4964,
+        "cpu": [
+          337,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 18
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-regional-resilience",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 83,
+    "budget_updates": 9000,
+    "reserved_input_updates": 1440,
+    "trace": [
+      {
+        "action": "research Stealth",
+        "ticks": 72,
+        "cash": 16776,
+        "cpu": [
+          42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 12
+      },
+      {
+        "action": "build Storage Unit in N AMERICA",
+        "ticks": 74,
+        "cash": 12542,
+        "cpu": [
+          42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 12
+      },
+      {
+        "action": "build Storage Unit in EUROPE",
+        "ticks": 76,
+        "cash": 9041,
+        "cpu": [
+          42,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 12
+      },
+      {
+        "action": "install 2 Gaming PC",
+        "ticks": 79,
+        "cash": 7393,
+        "cpu": [
+          54,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      },
+      {
+        "action": "install 2 Gaming PC",
+        "ticks": 82,
+        "cash": 5863,
+        "cpu": [
+          64,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      },
+      {
+        "action": "build Server Access in ASIA",
+        "ticks": 83,
+        "cash": 5954,
+        "cpu": [
+          74,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 83,
+        "cash": 5954,
+        "cpu": [
+          74,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 13
+      }
+    ],
+    "desktop_verified": false
+  },
+  {
+    "task_id": "singularity-hardware-frontier",
+    "native_rule_witness": true,
+    "simulation_ticks_14400s": 138,
+    "budget_updates": 9000,
+    "reserved_input_updates": 1440,
+    "trace": [
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 1,
+        "cash": 112473,
+        "cpu": [
+          1236,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 3,
+        "cash": 119432,
+        "cpu": [
+          1271,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in ASIA",
+        "ticks": 4,
+        "cash": 122146,
+        "cpu": [
+          1306,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AFRICA",
+        "ticks": 5,
+        "cash": 124670,
+        "cpu": [
+          1348,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 0
+      },
+      {
+        "action": "build Datacenter in AUSTRALIA",
+        "ticks": 6,
+        "cash": 127322,
+        "cpu": [
+          1383,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in S AMERICA",
+        "ticks": 7,
+        "cash": 130383,
+        "cpu": [
+          1412,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in N AMERICA",
+        "ticks": 8,
+        "cash": 133531,
+        "cpu": [
+          1454,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "build Datacenter in EUROPE",
+        "ticks": 10,
+        "cash": 141843,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 1
+      },
+      {
+        "action": "research Advanced Microchip Design",
+        "ticks": 131,
+        "cash": 113558,
+        "cpu": [
+          1489,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 21
+      },
+      {
+        "action": "install 1 Supercomputer",
+        "ticks": 138,
+        "cash": 70889,
+        "cpu": [
+          757,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 23
+      },
+      {
+        "action": "final simultaneous goal",
+        "ticks": 138,
+        "cash": 70889,
+        "cpu": [
+          757,
+          0,
+          0,
+          0,
+          0
+        ],
+        "native_day": 23
+      }
+    ],
+    "desktop_verified": false
+  }
+]

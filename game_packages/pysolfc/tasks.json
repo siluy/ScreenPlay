@@ -1,0 +1,6562 @@
+{
+  "pysolfc-freecell-12": {
+    "game": "PySolFC FreeCell",
+    "game_id": "endgame-12",
+    "instruction": "Finish this FreeCell endgame: move all 12 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled.",
+    "max_decisions": 100,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_cards": 10,
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "king blocker",
+          "temporary reserve",
+          "suit foundation prerequisites"
+        ],
+        "difficulty_rationale": "Four independent suit columns have a king blocker; the longer four-card columns require tracking an extra rank dependency. Author estimate, pending empirical calibration. Initial empty tableau columns: 4; empty free cells: 4; maximum column depth: 3."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            100,
+            235
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            210
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            235
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            210
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            235
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            210
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            235
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            210
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            180
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          8,
+          12,
+          1
+        ],
+        [
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          8,
+          13,
+          1
+        ],
+        [
+          2,
+          8,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          8,
+          14,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          8,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-16": {
+    "game": "PySolFC FreeCell",
+    "game_id": "endgame-16",
+    "instruction": "Finish this FreeCell endgame: move all 16 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled.",
+    "max_decisions": 100,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_cards": 9,
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "king blocker",
+          "temporary reserve",
+          "suit foundation prerequisites"
+        ],
+        "difficulty_rationale": "Four independent suit columns have a king blocker; the longer four-card columns require tracking an extra rank dependency. Author estimate, pending empirical calibration. Initial empty tableau columns: 4; empty free cells: 4; maximum column depth: 4."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            100,
+            255
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            230
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            210
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            255
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            230
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            210
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            255
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            230
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            210
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            255
+          ],
+          "to": [
+            55,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            230
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            210
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            380,
+            180
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            805,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          8,
+          12,
+          1
+        ],
+        [
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          8,
+          13,
+          1
+        ],
+        [
+          2,
+          8,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          8,
+          14,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          8,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-exposed-pairs": {
+    "game": "PySolFC FreeCell",
+    "game_id": "exposed-pairs",
+    "instruction": "Finish this FreeCell position: move all 8 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "rows": [
+        [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Four short columns and four empty columns; identify suit-front ordering. Author estimate, pending empirical calibration. Initial empty tableau columns: 4; empty free cells: 4; maximum column depth: 2."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          3,
+          14,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-reserve-release": {
+    "game": "PySolFC FreeCell",
+    "game_id": "reserve-release",
+    "instruction": "Finish this FreeCell position: move all 8 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "rows": [
+        [
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ]
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "reserves": [
+        [
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ]
+        ]
+      ],
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "All free cells occupied but four empty columns permit immediate reserve release. Author estimate, pending empirical calibration. Initial empty tableau columns: 4; empty free cells: 0; maximum column depth: 1."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            149,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            242,
+            85
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            336,
+            85
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          10,
+          13,
+          1
+        ],
+        [
+          8,
+          13,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          11,
+          14,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-split-fronts": {
+    "game": "PySolFC FreeCell",
+    "game_id": "split-fronts",
+    "instruction": "Finish this FreeCell position: move all 10 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        10,
+        11,
+        12,
+        9
+      ],
+      "rows": [
+        [
+          [
+            2,
+            12
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            11
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        [],
+        []
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Unequal foundation fronts require comparing ranks across suits with ample workspace. Author estimate, pending empirical calibration. Initial empty tableau columns: 2; empty free cells: 4; maximum column depth: 2."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          5,
+          13,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-six-columns": {
+    "game": "PySolFC FreeCell",
+    "game_id": "six-columns",
+    "instruction": "Finish this FreeCell position: move all 12 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "rows": [
+        [
+          [
+            0,
+            12
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            10
+          ]
+        ],
+        [
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [],
+        []
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "easy",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Six shallow columns distribute blockers; two empty columns provide recovery space. Author estimate, pending empirical calibration. Initial empty tableau columns: 2; empty free cells: 4; maximum column depth: 2."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            287,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          2,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-one-empty-column": {
+    "game": "PySolFC FreeCell",
+    "game_id": "one-empty-column",
+    "instruction": "Finish this FreeCell position: move all 20 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "rows": [
+        [
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            2,
+            10
+          ]
+        ],
+        [
+          [
+            3,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            10
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            9
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        []
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Only one initial empty column; blockers across seven columns compete for temporary storage. Author estimate, pending empirical calibration. Initial empty tableau columns: 1; empty free cells: 4; maximum column depth: 3."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            381,
+            226
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            226
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            249
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            226
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            226
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          4,
+          13,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          4,
+          13,
+          1
+        ],
+        [
+          6,
+          13,
+          1
+        ],
+        [
+          6,
+          14,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-half-reserves": {
+    "game": "PySolFC FreeCell",
+    "game_id": "half-reserves",
+    "instruction": "Finish this FreeCell position: move all 16 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "rows": [
+        [
+          [
+            0,
+            11
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            10
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        [],
+        []
+      ],
+      "reserves": [
+        [
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            9
+          ]
+        ],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Two occupied free cells reduce flexible storage while longer columns hide dependencies. Author estimate, pending empirical calibration. Initial empty tableau columns: 2; empty free cells: 2; maximum column depth: 3."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            149,
+            85
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          9,
+          14,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          8,
+          13,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          4,
+          14,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          3,
+          14,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-unequal-fronts": {
+    "game": "PySolFC FreeCell",
+    "game_id": "unequal-fronts",
+    "instruction": "Finish this FreeCell position: move all 16 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        7,
+        9,
+        10,
+        10
+      ],
+      "rows": [
+        [
+          [
+            1,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            11
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        [],
+        []
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Unequal suit fronts and deeper columns require maintaining several independent rank chains. Author estimate, pending empirical calibration. Initial empty tableau columns: 2; empty free cells: 4; maximum column depth: 4."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            100,
+            249
+          ],
+          "to": [
+            194,
+            226
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            249
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            287,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          3,
+          14,
+          1
+        ],
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          2,
+          12,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-eight-columns": {
+    "game": "PySolFC FreeCell",
+    "game_id": "eight-columns",
+    "instruction": "Finish this FreeCell position: move all 16 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 120,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "rows": [
+        [
+          [
+            3,
+            12
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            12
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            10
+          ],
+          [
+            2,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            12
+          ]
+        ]
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "medium",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "No empty tableau column initially; free cells must create useful workspace. Author estimate, pending empirical calibration. Initial empty tableau columns: 0; empty free cells: 4; maximum column depth: 2."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          3,
+          14,
+          1
+        ],
+        [
+          6,
+          15,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          6,
+          12,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          7,
+          0,
+          1
+        ],
+        [
+          7,
+          13,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-full-reserves": {
+    "game": "PySolFC FreeCell",
+    "game_id": "full-reserves",
+    "instruction": "Finish this FreeCell position: move all 20 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 160,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "rows": [
+        [
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            8
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            11
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            2,
+            10
+          ]
+        ]
+      ],
+      "reserves": [
+        [
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            9
+          ]
+        ]
+      ],
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation",
+          "sequence transfer"
+        ],
+        "difficulty_rationale": "All columns and free cells occupied; progress requires legal alternating-color joins or available foundations. Author estimate, pending empirical calibration. Initial empty tableau columns: 0; empty free cells: 0; maximum column depth: 2."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            287,
+            203
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            336,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            242,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            381,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            175
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            194,
+            203
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            287,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            149,
+            85
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          11,
+          12,
+          1
+        ],
+        [
+          10,
+          12,
+          1
+        ],
+        [
+          8,
+          12,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          7,
+          14,
+          1
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          4,
+          13,
+          1
+        ],
+        [
+          5,
+          13,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          6,
+          0,
+          1
+        ],
+        [
+          6,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          9,
+          15,
+          1
+        ],
+        [
+          7,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-deep-blockers": {
+    "game": "PySolFC FreeCell",
+    "game_id": "deep-blockers",
+    "instruction": "Finish this FreeCell position: move all 24 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 160,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "rows": [
+        [
+          [
+            2,
+            9
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        [
+          [
+            2,
+            10
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        [
+          [
+            1,
+            10
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        [
+          [
+            3,
+            8
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            2,
+            11
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation",
+          "sequence transfer"
+        ],
+        "difficulty_rationale": "Deep columns bury low cards beneath multiple suits; workspace must preserve several future landing cards. Author estimate, pending empirical calibration. Initial empty tableau columns: 0; empty free cells: 4; maximum column depth: 5."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            194,
+            249
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            226
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            287,
+            249
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            221
+          ],
+          "to": [
+            568,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            662,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            272
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            249
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            381,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            287,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          4,
+          14,
+          1
+        ],
+        [
+          6,
+          13,
+          1
+        ],
+        [
+          7,
+          12,
+          1
+        ],
+        [
+          5,
+          2,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          2,
+          5,
+          2
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          3,
+          6,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          6,
+          12,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          6,
+          14,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          7,
+          15,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-asymmetric-pressure": {
+    "game": "PySolFC FreeCell",
+    "game_id": "asymmetric-pressure",
+    "instruction": "Finish this FreeCell position: move all 18 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 160,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        6,
+        8,
+        10,
+        10
+      ],
+      "rows": [
+        [
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            3,
+            11
+          ]
+        ],
+        [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            11
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        [
+          [
+            2,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            11
+          ]
+        ]
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "Highly unequal suit fronts create long prerequisite chains with no initial empty column. Author estimate, pending empirical calibration. Initial empty tableau columns: 0; empty free cells: 4; maximum column depth: 4."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            287,
+            226
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            249
+          ],
+          "to": [
+            474,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            249
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          4,
+          13,
+          1
+        ],
+        [
+          6,
+          14,
+          1
+        ],
+        [
+          7,
+          14,
+          1
+        ],
+        [
+          5,
+          14,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          12,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          5,
+          12,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-three-reserves": {
+    "game": "PySolFC FreeCell",
+    "game_id": "three-reserves",
+    "instruction": "Finish this FreeCell position: move all 19 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 160,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        7,
+        8,
+        9,
+        9
+      ],
+      "rows": [
+        [
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        [
+          [
+            2,
+            10
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        [
+          [
+            1,
+            12
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            1,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            12
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        [
+          [
+            2,
+            9
+          ]
+        ],
+        []
+      ],
+      "reserves": [
+        [
+          [
+            0,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            2,
+            11
+          ]
+        ],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation",
+          "sequence transfer"
+        ],
+        "difficulty_rationale": "One free cell and one empty column force careful workspace reuse across mixed-depth dependencies. Author estimate, pending empirical calibration. Initial empty tableau columns: 1; empty free cells: 1; maximum column depth: 3."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            662,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            194,
+            226
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            55,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            149,
+            85
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            381,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            198
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            242,
+            85
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          6,
+          14,
+          1
+        ],
+        [
+          2,
+          6,
+          1
+        ],
+        [
+          2,
+          15,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          8,
+          12,
+          1
+        ],
+        [
+          9,
+          12,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          15,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          1,
+          14,
+          1
+        ],
+        [
+          10,
+          14,
+          1
+        ],
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          6,
+          13,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ]
+      ]
+    }
+  },
+  "pysolfc-freecell-closed-tableau": {
+    "game": "PySolFC FreeCell",
+    "game_id": "closed-tableau",
+    "instruction": "Finish this FreeCell position: move all 20 remaining cards onto the four suit foundations.",
+    "rules": "Foundations build upward by suit from Ace to King. Tableau sequences descend with alternating colors. Use empty tableau columns or the four free cells to uncover blocked cards. Drag cards; press Z to undo. Hints, solver, automatic play, and switching deals are disabled. A descending alternating-color sequence can move together when enough free cells and empty columns are available.",
+    "max_decisions": 160,
+    "time_mode": "turn_based",
+    "undo_allowed": true,
+    "parameters": {
+      "foundation_counts": [
+        7,
+        7,
+        9,
+        9
+      ],
+      "rows": [
+        [
+          [
+            2,
+            11
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        [
+          [
+            1,
+            12
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        [
+          [
+            1,
+            7
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            12
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        [
+          [
+            3,
+            11
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            10
+          ]
+        ]
+      ],
+      "reserves": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "curriculum": {
+        "difficulty": "hard",
+        "mechanisms": [
+          "suit foundation prerequisites",
+          "alternating-color tableau",
+          "temporary storage allocation"
+        ],
+        "difficulty_rationale": "All eight columns occupied with mixed-depth dependencies; freeing columns and moving valid sequences interact. Author estimate, pending empirical calibration. Initial empty tableau columns: 0; empty free cells: 4; maximum column depth: 3."
+      }
+    },
+    "reference": {
+      "viewport": [
+        873,
+        641
+      ],
+      "provenance": "Offline search using native SuperMoveAC_RowStack, ReserveStack and SS_FoundationStack predicates. Native Game.isGameWon verified; GUI dispatch unverified.",
+      "actions": [
+        {
+          "type": "drag",
+          "from": [
+            381,
+            226
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            226
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            203
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            226
+          ],
+          "to": [
+            662,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            226
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            203
+          ],
+          "to": [
+            662,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            806,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            203
+          ],
+          "to": [
+            568,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            203
+          ],
+          "to": [
+            100,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            203
+          ],
+          "to": [
+            194,
+            180
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            381,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            755,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            568,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            100,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            203
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            287,
+            180
+          ],
+          "to": [
+            619,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            474,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            203
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            194,
+            180
+          ],
+          "to": [
+            525,
+            85
+          ],
+          "duration_ms": 400
+        },
+        {
+          "type": "drag",
+          "from": [
+            662,
+            180
+          ],
+          "to": [
+            712,
+            85
+          ],
+          "duration_ms": 400
+        }
+      ],
+      "stack_moves": [
+        [
+          3,
+          14,
+          1
+        ],
+        [
+          6,
+          15,
+          1
+        ],
+        [
+          1,
+          15,
+          1
+        ],
+        [
+          6,
+          15,
+          1
+        ],
+        [
+          7,
+          14,
+          1
+        ],
+        [
+          2,
+          6,
+          1
+        ],
+        [
+          2,
+          12,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          13,
+          1
+        ],
+        [
+          7,
+          13,
+          1
+        ],
+        [
+          5,
+          13,
+          1
+        ],
+        [
+          0,
+          13,
+          1
+        ],
+        [
+          4,
+          13,
+          1
+        ],
+        [
+          2,
+          13,
+          1
+        ],
+        [
+          4,
+          12,
+          1
+        ],
+        [
+          6,
+          12,
+          1
+        ],
+        [
+          1,
+          12,
+          1
+        ],
+        [
+          6,
+          14,
+          1
+        ]
+      ]
+    }
+  }
+}

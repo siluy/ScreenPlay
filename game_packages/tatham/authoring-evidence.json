@@ -1,0 +1,137 @@
+{
+  "fifteen-01": {
+    "difficulty": "easy",
+    "native_replay_success": true,
+    "reference_actions": 1,
+    "viewport": [
+      192,
+      192
+    ]
+  },
+  "net-3x3": {
+    "difficulty": "easy",
+    "native_replay_success": true,
+    "reference_actions": 12,
+    "viewport": [
+      129,
+      129
+    ]
+  },
+  "untangle-6": {
+    "difficulty": "easy",
+    "native_replay_success": true,
+    "reference_actions": 6,
+    "viewport": [
+      256,
+      256
+    ]
+  },
+  "fifteen-2x3": {
+    "difficulty": "easy",
+    "native_replay_success": true,
+    "reference_actions": 6,
+    "viewport": [
+      144,
+      192
+    ]
+  },
+  "net-barriers": {
+    "difficulty": "easy",
+    "native_replay_success": true,
+    "reference_actions": 14,
+    "viewport": [
+      161,
+      129
+    ]
+  },
+  "fifteen-12": {
+    "difficulty": "medium",
+    "native_replay_success": true,
+    "reference_actions": 12,
+    "viewport": [
+      192,
+      192
+    ]
+  },
+  "net-5x5": {
+    "difficulty": "medium",
+    "native_replay_success": true,
+    "reference_actions": 27,
+    "viewport": [
+      193,
+      193
+    ]
+  },
+  "untangle-10": {
+    "difficulty": "medium",
+    "native_replay_success": true,
+    "reference_actions": 10,
+    "viewport": [
+      320,
+      320
+    ]
+  },
+  "fifteen-4x3": {
+    "difficulty": "medium",
+    "native_replay_success": true,
+    "reference_actions": 20,
+    "viewport": [
+      240,
+      192
+    ]
+  },
+  "net-wrapping": {
+    "difficulty": "medium",
+    "native_replay_success": true,
+    "reference_actions": 23,
+    "viewport": [
+      193,
+      193
+    ]
+  },
+  "fifteen-24": {
+    "difficulty": "hard",
+    "native_replay_success": true,
+    "reference_actions": 24,
+    "viewport": [
+      192,
+      192
+    ]
+  },
+  "net-7x7": {
+    "difficulty": "hard",
+    "native_replay_success": true,
+    "reference_actions": 54,
+    "viewport": [
+      257,
+      257
+    ]
+  },
+  "untangle-15": {
+    "difficulty": "hard",
+    "native_replay_success": true,
+    "reference_actions": 15,
+    "viewport": [
+      384,
+      384
+    ]
+  },
+  "fifteen-4x4": {
+    "difficulty": "hard",
+    "native_replay_success": true,
+    "reference_actions": 38,
+    "viewport": [
+      240,
+      240
+    ]
+  },
+  "untangle-20": {
+    "difficulty": "hard",
+    "native_replay_success": true,
+    "reference_actions": 20,
+    "viewport": [
+      448,
+      448
+    ]
+  }
+}

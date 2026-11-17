@@ -14,8 +14,9 @@ import uuid
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from gameworld.tasks import load_task
-from gameworld_text.tatham import make_environment, game_tools
+from screenplay.tasks import load_task
+from screenplay_text.tatham import make_environment
+from screenplay_text.fifteen import tools
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
     }, indent=2) + "\n")
     env = make_environment(args.task, max_decisions=args.max_decisions)
     try:
-        schemas = game_tools(task.game, "text-symbolic")
+        schemas = tools("text-symbolic", task.game)
         obs = env.observe()
         (output / "initial.json").write_text(json.dumps({"observation": obs, "tools": schemas}, indent=2) + "\n")
         print(json.dumps({"observation": obs, "tools": schemas}, ensure_ascii=False), flush=True)
@@ -58,7 +59,7 @@ def main():
     finally:
         if hasattr(env, "close"):
             env.close()
-        print(f"Trace: {output}; private engine diagnostics: {env.private}", file=sys.stderr)
+        print(f"Trace: {output}; private engine diagnostics: {getattr(env, 'private', 'not applicable')}", file=sys.stderr)
 
 
 if __name__ == "__main__":

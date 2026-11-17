@@ -96,7 +96,7 @@ Marble center: (9.50,6.50).
 
 每次启动输出初始观察和动作定义；标准输入每行提交一个动作 JSON。输入结束会关闭游戏。交互证据保存在 `runs/text-prototype/`，私有引擎诊断保存在 `tmp/text-prototype-*`。当前入口使用无桌面窗口的驱动，关闭时等待子进程退出。
 
-程序调用可使用 `gameworld_text.tatham.make_environment(task_id)`，与现有文本适配器共享 `observe()`、`step(action)`、`close()` 和 `build_request()`。浏览器服务0.2.4开放全部六项目的90道文本题，新增45题使用独立的邀请快捷选项；新邀请逐题保存原生决策预算，旧邀请不变。
+程序调用可使用 `screenplay_text.tatham.make_environment(task_id)`，与现有文本适配器共享 `observe()`、`step(action)`、`close()` 和 `build_request()`。浏览器服务0.2.4开放全部六项目的90道文本题，新增45题使用独立的邀请快捷选项；新邀请逐题保存原生决策预算，旧邀请不变。
 
 ## 已验证的范围
 

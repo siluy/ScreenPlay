@@ -65,7 +65,7 @@ wheels = [
 ]
 
 [[package]]
-name = "gameworld-native"
+name = "screenplay-bench"
 version = "0.2.3"
 source = { editable = "." }
 dependencies = [

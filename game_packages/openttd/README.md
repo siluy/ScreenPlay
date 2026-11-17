@@ -7,10 +7,10 @@
 在项目根目录运行：
 
 ~~~sh
-.venv/bin/gameworld fetch openttd
-.venv/bin/gameworld build openttd
-.venv/bin/gameworld run openttd-road-gap-1 --reference
-.venv/bin/gameworld serve openttd-road-gap-2 --port 8788
+.venv/bin/screenplay fetch openttd
+.venv/bin/screenplay build openttd
+.venv/bin/screenplay run openttd-road-gap-1 --reference
+.venv/bin/screenplay serve openttd-road-gap-2 --port 8788
 ~~~
 
 当前已验证 macOS 原生构建。需要 Xcode Command Line Tools 和项目内的 CMake/Ninja；本机构建使用现有 PNG、LZMA、LZO 库。构建出的二进制依赖本机动态库，尚未作为可移植安装包发布。首次构建会从官方地址下载 OpenGFX，后续使用项目缓存。
@@ -49,9 +49,9 @@
 
 ## 修改范围
 
-- [gameworld_bridge.cpp](native/gameworld_bridge.cpp)：固定场景、更新额度、原生状态导出和模式切换约束。
-- [构建与插桩](../../src/gameworld/openttd_build.py)：原版源码准备、入口挂接、图形资源和编译。
-- [环境适配器](../../src/gameworld/openttd.py)：进程生命周期、原生窗口截图、PyAutoGUI 输入、受控时间推进和评分。
+- [screenplay_bridge.cpp](native/screenplay_bridge.cpp)：固定场景、更新额度、原生状态导出和模式切换约束。
+- [构建与插桩](../../src/screenplay/openttd_build.py)：原版源码准备、入口挂接、图形资源和编译。
+- [环境适配器](../../src/screenplay/openttd.py)：进程生命周期、原生窗口截图、PyAutoGUI 输入、受控时间推进和评分。
 - [场景与参考操作](tasks.json)：公开目标、规则、预算及建设者参考输入。
 
 没有改写道路寻路、车辆行驶、站点停靠或玩家建造规则。初始化时跳过空地图不需要的产业生成告警。原生单线程模式用于协调本机 Cocoa 界面与受控游戏循环。

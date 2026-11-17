@@ -6,10 +6,10 @@ from pathlib import Path
 P=Path(__file__).resolve().parent;ROOT=P.parents[1]
 sys.path.insert(0,str(ROOT/'.cache/sources/singularity'));sys.path.insert(0,str(P/'native'))
 from singularity.code import dirs,g,data,i18n,base,item
-from gameworld_scenario import apply_fixture,goal_status
+from screenplay_scenario import apply_fixture,goal_status
 root=ROOT/'.cache/sources/singularity/singularity'
 for name,rel in {'root':'','data':'data','i18n':'i18n','sounds':'data/sounds','music':'music'}.items():dirs.read_dirs[name]=[str(root/rel)]
-scratch=Path('/tmp/gameworld-singularity-native-witness');scratch.mkdir(exist_ok=True)
+scratch=Path('/tmp/screenplay-singularity-native-witness');scratch.mkdir(exist_ok=True)
 for name in ['i18n','pref','saves','log']:dirs.write_dirs[name]=str(scratch)
 builtins._=lambda x:x;builtins.ngettext=lambda a,b,n:a if n==1 else b
 i18n.gettext_language=gettext.NullTranslations()

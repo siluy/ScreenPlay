@@ -5,9 +5,9 @@ from dataclasses import replace
 from PIL import Image
 import pytest
 from pydantic import ValidationError
-from gameworld.protocol import validate_action
-from gameworld.runner import Episode, ProtocolError
-from gameworld.tasks import Task, parse_save, evaluate
+from screenplay.protocol import validate_action
+from screenplay.runner import Episode, ProtocolError
+from screenplay.tasks import Task, parse_save, evaluate
 
 
 def save(desc="fixture", solved_move=False):
@@ -132,8 +132,8 @@ def test_http_authentication_and_agent_client(episode):
     import threading
     from urllib.error import HTTPError
     from urllib.request import Request, urlopen
-    from gameworld.client import GameWorldClient
-    from gameworld.server import create_server
+    from screenplay.client import ScreenPlayClient
+    from screenplay.server import create_server
     server=create_server(episode,"test-token",port=0)
     thread=threading.Thread(target=server.serve_forever,kwargs={"poll_interval":.05},daemon=True)
     thread.start()
@@ -141,7 +141,7 @@ def test_http_authentication_and_agent_client(episode):
     try:
         with pytest.raises(HTTPError) as error: urlopen(base+"/v1/observation",timeout=2)
         assert error.value.code==401
-        client=GameWorldClient(base,"test-token")
+        client=ScreenPlayClient(base,"test-token")
         observation=client.observe()
         payload=client.prepare_action(observation,{"type":"click","x":10,"y":20})
         result=client.send_action(payload)

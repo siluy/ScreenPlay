@@ -14,7 +14,7 @@ import threading
 import time
 import uuid
 
-from gameworld.tasks import catalog
+from screenplay.tasks import catalog
 from . import __version__
 from .runtime import NativeRuntime
 from .reporting import build_report, number

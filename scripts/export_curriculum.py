@@ -7,8 +7,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from gameworld.tasks import catalog, load_task
-from gameworld.protocol import ACTION
+from screenplay.tasks import catalog, load_task
+from screenplay.protocol import ACTION
 
 NAMES = {"tatham": "Tatham Puzzles", "openttd": "OpenTTD", "singularity": "Endgame: Singularity",
          "pysolfc": "PySolFC / FreeCell", "enigma": "Enigma", "endless_sky": "Endless Sky"}
@@ -80,7 +80,7 @@ def main():
               "desktop_success_count": sum(r["desktop_success"] for r in rows), "tasks": rows}
     (ROOT / "artifacts").mkdir(parents=True, exist_ok=True)
     (ROOT / "artifacts/v1-task-catalog.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    lines = ["# GameWorld 初版 90 题目录", "", "六个独立项目，每个 15 题；简单、中等、困难各 5 题。全部属于 development 集，难度是作者预估，尚未经统一人类与模型实验校准。Tatham 的三个子游戏共同计为一个项目。", "",
+    lines = ["# ScreenPlay 初版 90 题目录", "", "六个独立项目，每个 15 题；简单、中等、困难各 5 题。全部属于 development 集，难度是作者预估，尚未经统一人类与模型实验校准。Tatham 的三个子游戏共同计为一个项目。", "",
              "难度依据规划依赖、状态与记忆负担、资源约束、操作精度及恢复空间。参考轨迹长度是可行性证据，不是最优解或难度标签。不同项目的同一难度标签不表示难度相等。", "",
              f"当前目录中的 **{report['desktop_success_count']}/90** 题已有与当前场景参数一致的成功桌面记录。下表仅将真实截图、PyAutoGUI 输入及原生成功判分同时具备的记录标为「已通关」；原生规则可解性、静态拓扑检查和初态启动属于其他证据。", "",
              "[结构化目录](artifacts/v1-task-catalog.json) · [开发与验证说明](docs/development.md)", ""]

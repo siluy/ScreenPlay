@@ -6,10 +6,10 @@ import sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from gameworld.tasks import catalog
-from gameworld_text.fifteen import build_request
-from gameworld_text.freecell import FreeCellText,STACKS
-from gameworld_text.endless import EndlessText
+from screenplay.tasks import catalog
+from screenplay_text.fifteen import build_request
+from screenplay_text.freecell import FreeCellText,STACKS
+from screenplay_text.endless import EndlessText
 
 
 def audit():

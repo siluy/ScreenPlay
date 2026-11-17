@@ -8,4 +8,4 @@
 
 机制、难度估计和原生对象来源见 [CURRICULUM.md](CURRICULUM.md)；当前逐关成功记录见 current witnesses (historical local artifact; not distributed)，探索及负例见 desktop evidence (historical local artifact; not distributed)。topology-feasibility.json 仅证明抽象连通性，其范围与真实物理轨迹分开。难度仍待模型/人工校准。
 
-源码版本与许可见 source.json 和 UPSTREAM-*。构建：`gameworld build enigma`；列表：`gameworld tasks`；重放：`gameworld run TASK --reference`。
+源码版本与许可见 source.json 和 UPSTREAM-*。构建：`screenplay build enigma`；列表：`screenplay tasks`；重放：`screenplay run TASK --reference`。

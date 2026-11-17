@@ -8,4 +8,4 @@
 
 机制与证据范围见 [CURRICULUM.md](CURRICULUM.md)，当前逐题结果见 current witnesses (historical local artifact; not distributed)，包含探索与负例的完整记录见 desktop evidence (historical local artifact; not distributed)。离线原生资源轨迹另见 native-feasibility.json；其范围与桌面记录分开。
 
-源码版本与许可见 source.json 和 UPSTREAM-*。构建：`gameworld build singularity`；列表：`gameworld tasks`；重放：`gameworld run TASK --reference`。
+源码版本与许可见 source.json 和 UPSTREAM-*。构建：`screenplay build singularity`；列表：`screenplay tasks`；重放：`screenplay run TASK --reference`。

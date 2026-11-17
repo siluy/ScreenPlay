@@ -14,8 +14,8 @@ import uuid
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from gameworld.tasks import load_task
-from gameworld_text.tatham import make_environment, game_tools
+from screenplay.tasks import load_task
+from screenplay_text.tatham import make_environment, game_tools
 
 
 def main():

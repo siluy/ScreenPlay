@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 p=ROOT/'game_packages/tatham/tasks.json'
 tasks=json.loads(p.read_text())
-engine=ROOT/'build/tatham/bin/gw-engine'
+engine=ROOT/'build/tatham/bin/screenplay-engine'
 def run(t, commands):
  return subprocess.run([str(engine),t['game'],t['game_id']],input=commands,text=True,capture_output=True,check=True).stdout
 def field(s,k):

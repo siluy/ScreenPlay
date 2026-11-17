@@ -6,7 +6,7 @@
 
 源码版本与素材许可见 source.json 和 UPSTREAM-*。实际桌面验证总览见 ../../六款游戏接入.md。
 
-构建：`gameworld build pysolfc`。使用 `gameworld tasks` 查看任务 ID，再运行 `gameworld run TASK --reference` 或 `gameworld serve TASK`。
+构建：`screenplay build pysolfc`。使用 `screenplay tasks` 查看任务 ID，再运行 `screenplay run TASK --reference` 或 `screenplay serve TASK`。
 
 第一版现含15道FreeCell作者局面，easy/medium/hard各5题；旧12/16张题ID保留。显式布局支持不同花色基础堆进度、自由格预占、无空列、多层阻挡与合法序列转移。逐题结构与证据边界见 [AUTHORING.md](AUTHORING.md)。难度是作者预估，尚待模型/人类标定。
 

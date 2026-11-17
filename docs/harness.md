@@ -2,11 +2,11 @@
 
 ## GUI
 
-`gameworld run` executes a single task; `gameworld batch` runs a serial, resumable experiment plan. The agent configuration references environment-variable names, never embedded credentials. `src/gameworld/agents.py` owns provider requests and response parsing. `src/gameworld/experiments.py` records budgets, API attempts, results and usage. `src/gameworld/guarded.py` implements process limits. `src/gameworld/runner.py` owns observations and action receipts.
+`screenplay run` executes a single task; `screenplay batch` runs a serial, resumable experiment plan. The agent configuration references environment-variable names, never embedded credentials. `src/screenplay/agents.py` owns provider requests and response parsing. `src/screenplay/experiments.py` records budgets, API attempts, results and usage. `src/screenplay/guarded.py` implements process limits. `src/screenplay/runner.py` owns observations and action receipts.
 
 Each action is tied to the current observation and an action ID. Invalid actions consume decisions. `success` is boolean only for scored results; infrastructure interruptions may be unscored (`null`). Keep interruptions separate from scored failures. A resumed batch retains attempts and completed scores. Do not edit task definitions or protocol settings while resuming.
 
-Use `gameworld replay RUN_DIRECTORY` to create a replay. Model responses and screenshots are local run artifacts and are excluded from this repository.
+Use `screenplay replay RUN_DIRECTORY` to create a replay. Model responses and screenshots are local run artifacts and are excluded from this repository.
 
 ## Text
 
@@ -14,9 +14,9 @@ The interactive command `scripts/run_text.py` supports all six projects and outp
 
 ```python
 from pathlib import Path
-from gameworld.agents import load_agent_config
-from gameworld_text.agent import TextAgent
-from gameworld_text.tatham import make_environment
+from screenplay.agents import load_agent_config
+from screenplay_text.agent import TextAgent
+from screenplay_text.tatham import make_environment
 
 # Build the relevant game first. Environment variables supply model credentials.
 run = Path("runs/custom-text")

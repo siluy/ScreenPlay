@@ -9,9 +9,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from gameworld.tasks import catalog
-from gameworld.validation import engine_run, reference_commands
-from gameworld_text.fifteen import CONDITIONS, FifteenText, build_request, task_ids
+from screenplay.tasks import catalog
+from screenplay.validation import engine_run, reference_commands
+from screenplay_text.fifteen import CONDITIONS, FifteenText, build_request, task_ids
 
 
 def audit() -> dict:

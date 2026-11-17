@@ -7,10 +7,6 @@
   "license": "MIT for original contributions; upstream exceptions in NOTICE.md",
   "files": [
     {
-      "path": ".env.example",
-      "bytes": 176
-    },
-    {
       "path": ".gitattributes",
       "bytes": 51
     },
@@ -19,16 +15,8 @@
       "bytes": 602
     },
     {
-      "path": ".gitignore",
-      "bytes": 212
-    },
-    {
       "path": "CONTRIBUTING.md",
       "bytes": 1443
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 1063
     },
     {
       "path": "NOTICE.md",
@@ -36,15 +24,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 5058
+      "bytes": 5182
     },
     {
       "path": "configs/agents/openai-compatible.json",
-      "bytes": 332
-    },
-    {
-      "path": "configs/experiments/gui-example.json",
-      "bytes": 324
+      "bytes": 335
     },
     {
       "path": "deploy/cloudflare/README.md",
@@ -64,15 +48,11 @@
     },
     {
       "path": "docs/development.md",
-      "bytes": 8033
-    },
-    {
-      "path": "docs/harness.md",
-      "bytes": 3001
+      "bytes": 8042
     },
     {
       "path": "docs/http-api.md",
-      "bytes": 3150
+      "bytes": 3152
     },
     {
       "path": "docs/human-data.md",
@@ -83,20 +63,12 @@
       "bytes": 3372
     },
     {
-      "path": "docs/release.md",
-      "bytes": 1019
-    },
-    {
       "path": "docs/remote-access.md",
       "bytes": 1012
     },
     {
-      "path": "docs/tasks.md",
-      "bytes": 4235
-    },
-    {
       "path": "docs/text-interface-prototypes.md",
-      "bytes": 9603
+      "bytes": 9604
     },
     {
       "path": "docs/validation.md",
@@ -104,7 +76,7 @@
     },
     {
       "path": "game_packages/endless_sky/README.md",
-      "bytes": 3274
+      "bytes": 3278
     },
     {
       "path": "game_packages/endless_sky/UPSTREAM-copyright",
@@ -115,12 +87,12 @@
       "bytes": 35141
     },
     {
-      "path": "game_packages/endless_sky/native/GameWorld.cpp",
-      "bytes": 7127
+      "path": "game_packages/endless_sky/native/ScreenPlay.cpp",
+      "bytes": 7140
     },
     {
-      "path": "game_packages/endless_sky/native/GameWorld.h",
-      "bytes": 215
+      "path": "game_packages/endless_sky/native/ScreenPlay.h",
+      "bytes": 216
     },
     {
       "path": "game_packages/endless_sky/source.json",
@@ -136,7 +108,7 @@
     },
     {
       "path": "game_packages/enigma/README.md",
-      "bytes": 1630
+      "bytes": 1633
     },
     {
       "path": "game_packages/enigma/UPSTREAM-COPYING",
@@ -148,67 +120,67 @@
     },
     {
       "path": "game_packages/enigma/levels/crate-labyrinth.xml",
-      "bytes": 2061
-    },
-    {
-      "path": "game_packages/enigma/levels/crate-passage.xml",
-      "bytes": 2057
-    },
-    {
-      "path": "game_packages/enigma/levels/friction-slalom.xml",
-      "bytes": 2061
-    },
-    {
-      "path": "game_packages/enigma/levels/gated-memory.xml",
-      "bytes": 2055
-    },
-    {
-      "path": "game_packages/enigma/levels/ice-crossing.xml",
-      "bytes": 2055
-    },
-    {
-      "path": "game_packages/enigma/levels/icy-causeway.xml",
-      "bytes": 2055
-    },
-    {
-      "path": "game_packages/enigma/levels/key-switch-cascade.xml",
-      "bytes": 2067
-    },
-    {
-      "path": "game_packages/enigma/levels/keyed-chamber.xml",
-      "bytes": 2057
-    },
-    {
-      "path": "game_packages/enigma/levels/keys-and-causeway.xml",
       "bytes": 2065
     },
     {
+      "path": "game_packages/enigma/levels/crate-passage.xml",
+      "bytes": 2061
+    },
+    {
+      "path": "game_packages/enigma/levels/friction-slalom.xml",
+      "bytes": 2065
+    },
+    {
+      "path": "game_packages/enigma/levels/gated-memory.xml",
+      "bytes": 2059
+    },
+    {
+      "path": "game_packages/enigma/levels/ice-crossing.xml",
+      "bytes": 2059
+    },
+    {
+      "path": "game_packages/enigma/levels/icy-causeway.xml",
+      "bytes": 2059
+    },
+    {
+      "path": "game_packages/enigma/levels/key-switch-cascade.xml",
+      "bytes": 2071
+    },
+    {
+      "path": "game_packages/enigma/levels/keyed-chamber.xml",
+      "bytes": 2061
+    },
+    {
+      "path": "game_packages/enigma/levels/keys-and-causeway.xml",
+      "bytes": 2069
+    },
+    {
       "path": "game_packages/enigma/levels/oxyd-memory.xml",
-      "bytes": 1381
+      "bytes": 1385
     },
     {
       "path": "game_packages/enigma/levels/oxyd-pair.xml",
-      "bytes": 1377
+      "bytes": 1381
     },
     {
       "path": "game_packages/enigma/levels/sequential-gates.xml",
-      "bytes": 2063
+      "bytes": 2067
     },
     {
       "path": "game_packages/enigma/levels/switch-gate.xml",
-      "bytes": 2053
+      "bytes": 2057
     },
     {
       "path": "game_packages/enigma/levels/water-causeway.xml",
-      "bytes": 2059
+      "bytes": 2063
     },
     {
       "path": "game_packages/enigma/levels/winding-memory.xml",
-      "bytes": 2059
+      "bytes": 2063
     },
     {
-      "path": "game_packages/enigma/native/gameworld_bridge.hh",
-      "bytes": 1477
+      "path": "game_packages/enigma/native/screenplay_bridge.hh",
+      "bytes": 1481
     },
     {
       "path": "game_packages/enigma/source.json",
@@ -232,19 +204,19 @@
     },
     {
       "path": "game_packages/openttd/README.md",
-      "bytes": 7496
+      "bytes": 7504
     },
     {
       "path": "game_packages/openttd/UPSTREAM-COPYING.md",
       "bytes": 17949
     },
     {
-      "path": "game_packages/openttd/native/gameworld_bridge.cpp",
-      "bytes": 11602
+      "path": "game_packages/openttd/native/screenplay_bridge.cpp",
+      "bytes": 11623
     },
     {
-      "path": "game_packages/openttd/native/gameworld_bridge.h",
-      "bytes": 279
+      "path": "game_packages/openttd/native/screenplay_bridge.h",
+      "bytes": 287
     },
     {
       "path": "game_packages/openttd/source.json",
@@ -264,7 +236,7 @@
     },
     {
       "path": "game_packages/pysolfc/README.md",
-      "bytes": 1444
+      "bytes": 1448
     },
     {
       "path": "game_packages/pysolfc/UPSTREAM-COPYING",
@@ -275,8 +247,8 @@
       "bytes": 6770
     },
     {
-      "path": "game_packages/pysolfc/native/gameworld_adapter.py",
-      "bytes": 4497
+      "path": "game_packages/pysolfc/native/screenplay_adapter.py",
+      "bytes": 4499
     },
     {
       "path": "game_packages/pysolfc/source.json",
@@ -296,7 +268,7 @@
     },
     {
       "path": "game_packages/singularity/README.md",
-      "bytes": 1465
+      "bytes": 1468
     },
     {
       "path": "game_packages/singularity/UPSTREAM-LICENSE.CC-BY-SA-3.txt",
@@ -319,11 +291,11 @@
       "bytes": 9540
     },
     {
-      "path": "game_packages/singularity/native/gameworld_adapter.py",
-      "bytes": 3653
+      "path": "game_packages/singularity/native/screenplay_adapter.py",
+      "bytes": 3656
     },
     {
-      "path": "game_packages/singularity/native/gameworld_scenario.py",
+      "path": "game_packages/singularity/native/screenplay_scenario.py",
       "bytes": 2552
     },
     {
@@ -340,7 +312,7 @@
     },
     {
       "path": "game_packages/singularity/verify_native_curriculum.py",
-      "bytes": 6242
+      "bytes": 6244
     },
     {
       "path": "game_packages/tatham/AUTHORING.md",
@@ -356,15 +328,15 @@
     },
     {
       "path": "game_packages/tatham/native/CMakeLists.txt",
-      "bytes": 1810
+      "bytes": 1871
     },
     {
       "path": "game_packages/tatham/native/engine.c",
-      "bytes": 1775
+      "bytes": 1783
     },
     {
       "path": "game_packages/tatham/native/telemetry.m.inc",
-      "bytes": 1898
+      "bytes": 1902
     },
     {
       "path": "game_packages/tatham/source.json",
@@ -380,23 +352,23 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 982
+      "bytes": 986
     },
     {
       "path": "research/text-ablation/native/endless_text.cpp",
-      "bytes": 4977
+      "bytes": 4983
     },
     {
       "path": "research/text-ablation/native/enigma_text.hh",
-      "bytes": 5989
+      "bytes": 5992
     },
     {
       "path": "research/text-ablation/native/openttd_text.inc",
-      "bytes": 10096
+      "bytes": 10097
     },
     {
       "path": "research/text-ablation/native/singularity_text.py",
-      "bytes": 6863
+      "bytes": 6865
     },
     {
       "path": "scripts/author_freecell_expansion.py",
@@ -404,15 +376,15 @@
     },
     {
       "path": "scripts/author_puzzles_expansion.py",
-      "bytes": 6863
+      "bytes": 6871
     },
     {
       "path": "scripts/author_singularity_enigma_gui.py",
-      "bytes": 15364
+      "bytes": 15367
     },
     {
       "path": "scripts/author_transport_gui.py",
-      "bytes": 3108
+      "bytes": 3111
     },
     {
       "path": "scripts/author_transport_space.py",
@@ -424,7 +396,7 @@
     },
     {
       "path": "scripts/build_text_remaining.py",
-      "bytes": 5472
+      "bytes": 5477
     },
     {
       "path": "scripts/enigma_author_routes.py",
@@ -432,15 +404,15 @@
     },
     {
       "path": "scripts/export_curriculum.py",
-      "bytes": 6743
+      "bytes": 6746
     },
     {
       "path": "scripts/generate_pilot_tasks.py",
-      "bytes": 3095
+      "bytes": 3104
     },
     {
       "path": "scripts/native_smoke.py",
-      "bytes": 2149
+      "bytes": 2154
     },
     {
       "path": "scripts/package_release.py",
@@ -448,7 +420,7 @@
     },
     {
       "path": "scripts/release/env.example",
-      "bytes": 176
+      "bytes": 179
     },
     {
       "path": "scripts/release/gitignore",
@@ -467,12 +439,8 @@
       "bytes": 920
     },
     {
-      "path": "scripts/run_text.py",
-      "bytes": 2878
-    },
-    {
       "path": "scripts/run_text_remaining.py",
-      "bytes": 2946
+      "bytes": 2948
     },
     {
       "path": "scripts/serve_remote.py",
@@ -488,147 +456,103 @@
     },
     {
       "path": "scripts/verify_singularity_enigma_references.py",
-      "bytes": 907
+      "bytes": 909
     },
     {
       "path": "scripts/verify_text_cards_port.py",
-      "bytes": 6433
+      "bytes": 6437
     },
     {
       "path": "scripts/verify_text_fifteen.py",
-      "bytes": 6270
+      "bytes": 6273
     },
     {
       "path": "scripts/verify_text_tatham.py",
-      "bytes": 5329
+      "bytes": 5334
     },
     {
-      "path": "src/gameworld/__init__.py",
-      "bytes": 69
+      "path": "src/screenplay/__init__.py",
+      "bytes": 70
     },
     {
-      "path": "src/gameworld/agents.py",
-      "bytes": 26776
+      "path": "src/screenplay/agents.py",
+      "bytes": 26781
     },
     {
-      "path": "src/gameworld/build.py",
-      "bytes": 6595
+      "path": "src/screenplay/build.py",
+      "bytes": 6606
     },
     {
-      "path": "src/gameworld/cli.py",
-      "bytes": 9659
+      "path": "src/screenplay/cli.py",
+      "bytes": 9669
     },
     {
-      "path": "src/gameworld/client.py",
-      "bytes": 1085
+      "path": "src/screenplay/client.py",
+      "bytes": 1086
     },
     {
-      "path": "src/gameworld/compiled_games.py",
-      "bytes": 7655
+      "path": "src/screenplay/compiled_games.py",
+      "bytes": 7679
     },
     {
-      "path": "src/gameworld/desktop.py",
-      "bytes": 8284
+      "path": "src/screenplay/desktop.py",
+      "bytes": 8285
     },
     {
-      "path": "src/gameworld/experiments.py",
-      "bytes": 24446
+      "path": "src/screenplay/experiments.py",
+      "bytes": 24448
     },
     {
-      "path": "src/gameworld/guarded.py",
-      "bytes": 8996
+      "path": "src/screenplay/guarded.py",
+      "bytes": 8997
     },
     {
-      "path": "src/gameworld/native.py",
-      "bytes": 8367
+      "path": "src/screenplay/native.py",
+      "bytes": 8373
     },
     {
-      "path": "src/gameworld/native_bridge.py",
-      "bytes": 1008
+      "path": "src/screenplay/native_bridge.py",
+      "bytes": 1013
     },
     {
-      "path": "src/gameworld/native_build.py",
-      "bytes": 3741
+      "path": "src/screenplay/native_build.py",
+      "bytes": 3744
     },
     {
-      "path": "src/gameworld/openttd.py",
-      "bytes": 10623
+      "path": "src/screenplay/openttd.py",
+      "bytes": 10629
     },
     {
-      "path": "src/gameworld/openttd_build.py",
-      "bytes": 5026
+      "path": "src/screenplay/openttd_build.py",
+      "bytes": 5040
     },
     {
-      "path": "src/gameworld/protocol.py",
+      "path": "src/screenplay/protocol.py",
       "bytes": 2115
     },
     {
-      "path": "src/gameworld/replay.py",
-      "bytes": 2860
+      "path": "src/screenplay/replay.py",
+      "bytes": 2862
     },
     {
-      "path": "src/gameworld/runner.py",
+      "path": "src/screenplay/runner.py",
       "bytes": 9854
     },
     {
-      "path": "src/gameworld/server.py",
+      "path": "src/screenplay/server.py",
       "bytes": 2565
     },
     {
-      "path": "src/gameworld/tasks.py",
+      "path": "src/screenplay/tasks.py",
       "bytes": 3931
     },
     {
-      "path": "src/gameworld/tatham.py",
-      "bytes": 3967
+      "path": "src/screenplay/tatham.py",
+      "bytes": 3974
     },
     {
-      "path": "src/gameworld/validation.py",
-      "bytes": 4428
-    },
-    {
-      "path": "src/gameworld_text/__init__.py",
-      "bytes": 80
-    },
-    {
-      "path": "src/gameworld_text/agent.py",
-      "bytes": 9142
-    },
-    {
-      "path": "src/gameworld_text/endless.py",
-      "bytes": 7007
-    },
-    {
-      "path": "src/gameworld_text/enigma.py",
-      "bytes": 3026
-    },
-    {
-      "path": "src/gameworld_text/fifteen.py",
-      "bytes": 11353
-    },
-    {
-      "path": "src/gameworld_text/freecell.py",
-      "bytes": 6222
-    },
-    {
-      "path": "src/gameworld_text/native_process.py",
-      "bytes": 5577
-    },
-    {
-      "path": "src/gameworld_text/openttd.py",
-      "bytes": 4430
-    },
-    {
-      "path": "src/gameworld_text/singularity.py",
-      "bytes": 2535
-    },
-    {
-      "path": "src/gameworld_text/structured.py",
-      "bytes": 3251
-    },
-    {
-      "path": "src/gameworld_text/tatham.py",
-      "bytes": 13564
+      "path": "src/screenplay/validation.py",
+      "bytes": 4437
     },
     {
       "path": "src/screenplay_human/__init__.py",
@@ -648,7 +572,7 @@
     },
     {
       "path": "src/screenplay_human/runtime.py",
-      "bytes": 4211
+      "bytes": 4212
     },
     {
       "path": "src/screenplay_human/server.py",
@@ -660,7 +584,7 @@
     },
     {
       "path": "src/screenplay_human/static/index.html",
-      "bytes": 16080
+      "bytes": 16082
     },
     {
       "path": "src/screenplay_human/static/style.css",
@@ -668,11 +592,55 @@
     },
     {
       "path": "src/screenplay_human/study.py",
-      "bytes": 37330
+      "bytes": 37331
     },
     {
       "path": "src/screenplay_human/worker.py",
-      "bytes": 4640
+      "bytes": 4645
+    },
+    {
+      "path": "src/screenplay_text/__init__.py",
+      "bytes": 80
+    },
+    {
+      "path": "src/screenplay_text/agent.py",
+      "bytes": 9145
+    },
+    {
+      "path": "src/screenplay_text/endless.py",
+      "bytes": 7014
+    },
+    {
+      "path": "src/screenplay_text/enigma.py",
+      "bytes": 3027
+    },
+    {
+      "path": "src/screenplay_text/fifteen.py",
+      "bytes": 11363
+    },
+    {
+      "path": "src/screenplay_text/freecell.py",
+      "bytes": 6223
+    },
+    {
+      "path": "src/screenplay_text/native_process.py",
+      "bytes": 5586
+    },
+    {
+      "path": "src/screenplay_text/openttd.py",
+      "bytes": 4432
+    },
+    {
+      "path": "src/screenplay_text/singularity.py",
+      "bytes": 2536
+    },
+    {
+      "path": "src/screenplay_text/structured.py",
+      "bytes": 3252
+    },
+    {
+      "path": "src/screenplay_text/tatham.py",
+      "bytes": 13576
     },
     {
       "path": "tests/test_human_breaks.py",
@@ -680,7 +648,7 @@
     },
     {
       "path": "tests/test_human_reporting.py",
-      "bytes": 5453
+      "bytes": 5454
     },
     {
       "path": "tests/test_human_singularity_ui.cjs",
@@ -696,11 +664,19 @@
     },
     {
       "path": "tests/test_protocol.py",
-      "bytes": 5899
+      "bytes": 5906
     },
     {
       "path": "uv.lock",
       "bytes": 110686
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 212
+    },
+    {
+      "path": ".env.example",
+      "bytes": 179
     }
   ],
   "paper": {

@@ -14,9 +14,9 @@ from xml.etree import ElementTree as ET
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from gameworld.runner import Episode, write_json
-from gameworld.tasks import load_task,catalog
-from gameworld.replay import export_replay
+from screenplay.runner import Episode, write_json
+from screenplay.tasks import load_task,catalog
+from screenplay.replay import export_replay
 name=sys.argv[1]
 output=Path(sys.argv[2]) if len(sys.argv)>2 else ROOT/'runs/v1-acceptance'/f'{name}-author'
 output.parent.mkdir(parents=True,exist_ok=True)

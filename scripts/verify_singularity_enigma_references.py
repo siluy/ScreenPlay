@@ -1,8 +1,8 @@
 """Two independent static-reference interface checks; no feedback action choice."""
 import json
 from pathlib import Path
-from gameworld.experiments import run_one
-from gameworld.runner import write_json
+from screenplay.experiments import run_one
+from screenplay.runner import write_json
 ROOT=Path(__file__).resolve().parents[1]
 for task in ['enigma-keys-and-causeway','singularity-undersea-research']:
     report=run_one(task,reference=True,output=ROOT/'runs/v1-acceptance'/(task+'-replay'))

@@ -5,7 +5,7 @@
 #include "Command.h"
 #include "Files.h"
 #include "GameData.h"
-#include "GameWorld.h"
+#include "ScreenPlay.h"
 #include "HiringPanel.h"
 #include "Interface.h"
 #include "PlayerInfo.h"
@@ -49,14 +49,14 @@ int main(int argc, char **argv) {
         TaskQueue queue;
         GameData::BeginLoad(queue, player, true, false, true).get();
         GameData::FinishLoading();
-        GameWorld::Initialize(player);
+        ScreenPlay::Initialize(player);
         TradingControl trading(player);
         HiringControl hiring(player);
         std::string panel = "port";
         int sequence = 0, updates = 0;
         auto publish = [&]() {
-            GameWorld::Publish(player);
-            std::ifstream file(std::getenv("GAMEWORLD_STATE_FILE"));
+            ScreenPlay::Publish(player);
+            std::ifstream file(std::getenv("SCREENPLAY_STATE_FILE"));
             std::string state((std::istreambuf_iterator<char>(file)), {});
             const auto end = state.rfind('}');
             if(end == std::string::npos) throw std::runtime_error("Missing native state");
@@ -104,10 +104,10 @@ int main(int argc, char **argv) {
             ++sequence;
             updates += advance;
             {
-                std::ofstream control(std::getenv("GAMEWORLD_CONTROL_FILE"));
+                std::ofstream control(std::getenv("SCREENPLAY_CONTROL_FILE"));
                 control << sequence << ' ' << updates << '\n';
             }
-            for(int i = 0; i <= advance; ++i) GameWorld::BeginFrame();
+            for(int i = 0; i <= advance; ++i) ScreenPlay::BeginFrame();
             publish();
         }
         SDL_Quit();

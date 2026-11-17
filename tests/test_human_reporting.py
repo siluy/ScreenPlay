@@ -5,7 +5,7 @@ import sqlite3
 
 import pytest
 
-from gameworld.tasks import catalog
+from screenplay.tasks import catalog
 from screenplay_human.reporting import build_report
 from screenplay_human.server import results_csv, summary_csv
 from screenplay_human.study import Study

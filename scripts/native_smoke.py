@@ -10,9 +10,9 @@ from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"src"))
-from gameworld.tatham import TathamBackend
-from gameworld.tasks import catalog, load_task, evaluate
-from gameworld.desktop import permissions
+from screenplay.tatham import TathamBackend
+from screenplay.tasks import catalog, load_task, evaluate
+from screenplay.desktop import permissions
 
 artifacts=ROOT/"artifacts/native-initial-frames"
 artifacts.mkdir(parents=True,exist_ok=True)
@@ -25,7 +25,7 @@ try:
         private.mkdir(parents=True)
         frame=artifacts/(name+".png")
         if frame.exists(): frame.unlink()
-        os.environ["GAMEWORLD_RENDER_FILE"]=str(frame)
+        os.environ["SCREENPLAY_RENDER_FILE"]=str(frame)
         backend=TathamBackend()
         try:
             task=load_task(name)
@@ -42,7 +42,7 @@ try:
         finally:
             backend.close()
 finally:
-    os.environ.pop("GAMEWORLD_RENDER_FILE",None)
+    os.environ.pop("SCREENPLAY_RENDER_FILE",None)
 report={"created_at":datetime.now(timezone.utc).isoformat(),"passed":all(r["passed"] for r in results),
         "scope":"original Cocoa frontend launch, own render buffer and read-only native state; not desktop screenshot/input validation",
         "permissions":permissions(),"results":results}

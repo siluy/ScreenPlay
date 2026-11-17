@@ -14,6 +14,6 @@
 
 已完成 macOS 原生增量编译和完整 15/15 题真实桌面通关，最终运行目录统一以 `-author-outfits` 结尾；每题终态原生记录均有 `outfits_kept=true` 与相同的原始/最终设备 map。每条 reference 指向对应成功运行。固定版本 Rutilicus 价格已与原生实时价格及最终账户余额核对。私有作者工具 `scripts/author_transport_gui.py` 通过统一 Episode 与 PyAutoGUI 录制，逐帧保留截图、状态和结果；这是作者可行性证据，不是自主模型成绩。汇总见 `artifacts/v1-transport-desktop.json`，此前候选失败与旧判分记录保留。
 
-构建：`gameworld build endless_sky`。列题：`gameworld tasks`。执行：`gameworld run TASK --reference`（仅已提供轨迹的任务）或 `gameworld serve TASK`。配置和存档分别放入每次运行的 private 目录；窗口为 1100×720 内容区。
+构建：`screenplay build endless_sky`。列题：`screenplay tasks`。执行：`screenplay run TASK --reference`（仅已提供轨迹的任务）或 `screenplay serve TASK`。配置和存档分别放入每次运行的 private 目录；窗口为 1100×720 内容区。
 
 v1 判分进一步要求最终已安装设备与起始 Shuttle 的原装配置完全一致（公开 instruction 同步说明），避免出售推进器等设备资助原本超预算的商品组合。原生桥在初始化缓存 `Ship::Outfits()`，终态比较完整 map，并输出私有 `outfits_kept`、原始和最终安装列表。GUI 改装功能仍保持原样，可调整后恢复。原有两题 ID 保留，但这项新增 v1 设备约束与早期历史运行明确区分，不修改历史记录；扩展后的完整 15 题另以新终态字段重放验证。

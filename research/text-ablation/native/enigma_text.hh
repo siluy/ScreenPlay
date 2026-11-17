@@ -2,7 +2,7 @@
  * This header is compiled only into the independent experimental text binary.
  */
 #pragma once
-#include "../../../.cache/prepared/enigma/gameworld_bridge.hh"
+#include "../../../.cache/prepared/enigma/screenplay_bridge.hh"
 #include "../../../.cache/prepared/openttd/src/3rdparty/nlohmann/json.hpp"
 #include "world.hh"
 #include "actors.hh"
@@ -109,7 +109,7 @@ inline void publish() {
         }
     }
     if(gw::processed<gw::target) return;
-    std::ifstream file(std::getenv("GAMEWORLD_STATE_FILE"));json state;file>>state;
+    std::ifstream file(std::getenv("SCREENPLAY_STATE_FILE"));json state;file>>state;
     state["text"]=describe();state["action_error"]=action_error;
     std::cout << "GWSTATE " << state.dump() << std::endl;
     std::string line;
@@ -118,7 +118,7 @@ inline void publish() {
     int sequence=request.at("sequence"),updates=request.at("updates");
     if(sequence<=gw::sequence || updates<0 || updates>500) throw std::runtime_error("Invalid trusted envelope");
     gw::sequence=sequence;gw::target=gw::processed+updates;
-    std::ofstream control(std::getenv("GAMEWORLD_CONTROL_FILE"));
+    std::ofstream control(std::getenv("SCREENPLAY_CONTROL_FILE"));
     control << gw::sequence << ' ' << gw::target << '\n';control.close();
     action_error=false;
     try {input(request.at("action"));}

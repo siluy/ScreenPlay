@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from gameworld.tasks import parse_save
+from screenplay.tasks import parse_save
 
 
 def fifteen(scramble: int, seed: int):
@@ -47,7 +47,7 @@ for name, configurations, rules, instruction in [
         tasks[f"{name.lower()}-{params}"] = {"game":name,"game_id":f"{params}#{seed}",
             "instruction":instruction,"rules":rules,"max_decisions":400}
 
-engine = ROOT / "build/tatham/bin/gw-engine"
+engine = ROOT / "build/tatham/bin/screenplay-engine"
 for task in tasks.values():
     result = subprocess.run([str(engine),task["game"],task["game_id"]],input="save\n",text=True,check=True,capture_output=True)
     save = result.stdout.split("SAVE_BEGIN\n",1)[1].split("SAVE_END",1)[0]

@@ -23,9 +23,9 @@ Python 3.12, uv, Git and Xcode Command Line Tools are required. Install native l
 
 ```sh
 uv sync --locked --extra native-games
-uv run gameworld tasks
-uv run gameworld build tatham
-uv run gameworld doctor
+uv run screenplay tasks
+uv run screenplay build tatham
+uv run screenplay doctor
 ```
 
 Run from a cloned source checkout: the runtime locates task packages and native drivers relative to the checkout. A standalone wheel is not a complete benchmark distribution.
@@ -36,12 +36,12 @@ Give the host terminal Screen Recording and Accessibility permissions and keep t
 
 ```sh
 cp .env.example .env
-# Set GAMEWORLD_BASE_URL, GAMEWORLD_MODEL and GAMEWORLD_API_KEY locally.
-uv run gameworld agent-info --config configs/agents/openai-compatible.json --env-file .env
-uv run gameworld run fifteen-01 --agent-config configs/agents/openai-compatible.json --env-file .env --output runs/gui-example
-uv run gameworld batch --config configs/experiments/gui-example.json --env-file .env --output runs/gui-batch
+# Set SCREENPLAY_BASE_URL, SCREENPLAY_MODEL and SCREENPLAY_API_KEY locally.
+uv run screenplay agent-info --config configs/agents/openai-compatible.json --env-file .env
+uv run screenplay run fifteen-01 --agent-config configs/agents/openai-compatible.json --env-file .env --output runs/gui-example
+uv run screenplay batch --config configs/experiments/gui-example.json --env-file .env --output runs/gui-batch
 # Continue the identical batch without replaying completed scores:
-uv run gameworld batch --config configs/experiments/gui-example.json --env-file .env --output runs/gui-batch --resume
+uv run screenplay batch --config configs/experiments/gui-example.json --env-file .env --output runs/gui-batch --resume
 ```
 
 ## Text interfaces
@@ -51,7 +51,7 @@ uv run python scripts/run_text.py --task fifteen-01 --output runs/text-example
 # Enter one JSON action per line, e.g. {"type":"finish"}; EOF closes the environment.
 ```
 
-The initial response contains the current observation and action schemas. For your own agent loop, use `gameworld_text.tatham.make_environment`, `env.observe()`, `env.step(action)` and `env.close()`. The provider implementation is `gameworld_text.agent.TextAgent`; see [harness documentation](docs/harness.md). Text and GUI observations/actions differ: their score difference is not a pure perception intervention.
+The initial response contains the current observation and action schemas. For your own agent loop, use `screenplay_text.tatham.make_environment`, `env.observe()`, `env.step(action)` and `env.close()`. The provider implementation is `screenplay_text.agent.TextAgent`; see [harness documentation](docs/harness.md). Text and GUI observations/actions differ: their score difference is not a pure perception intervention.
 
 ## Human studies
 
@@ -68,8 +68,8 @@ Open http://127.0.0.1:8790. The server prints the path to the local admin creden
 | Directory | Contents |
 |---|---|
 | `game_packages/` | Fixed task catalog, upstream source pins, native bridges and reference actions |
-| `src/gameworld/` | GUI runtime, provider integration, process limits, evaluation and replays |
-| `src/gameworld_text/` | Text environments and provider adapter |
+| `src/screenplay/` | GUI runtime, provider integration, process limits, evaluation and replays |
+| `src/screenplay_text/` | Text environments and provider adapter |
 | `src/screenplay_human/` | Human-study website and isolated workers |
 | `research/text-ablation/native/` | Native text drivers required at runtime |
 | `scripts/` | Build, validation and task-authoring tools |
@@ -88,3 +88,5 @@ These source checks do not replace native gameplay validation. Building all game
 ## Licensing
 
 See [LICENSE](LICENSE) for original project contributions and [NOTICE.md](NOTICE.md) for scope and upstream licenses. Native games, artwork and code derived from those projects retain their respective licenses. No ownership of upstream material is claimed.
+
+For upgrades from earlier development snapshots, see [naming migration](docs/migration.md). Rebuild native games after upgrading.

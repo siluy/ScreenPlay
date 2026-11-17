@@ -7,7 +7,7 @@ static void write_save(void *ctx, const void *buf, int len) {
 }
 
 int main(int argc, char **argv) {
-    if (argc != 3) { fprintf(stderr, "usage: gw-engine GAME GAME_ID\n"); return 2; }
+    if (argc != 3) { fprintf(stderr, "usage: screenplay-engine GAME GAME_ID\n"); return 2; }
     const game *g = NULL;
     for (int i = 0; i < gamecount; i++)
         if (!strcmp(argv[1], gamelist[i]->name)) g = gamelist[i];

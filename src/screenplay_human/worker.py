@@ -34,18 +34,18 @@ def main():
     env = None
     try:
         with contextlib.redirect_stdout(sys.stderr):
-            from gameworld.runner import Episode, append_json, write_json
-            from gameworld.tasks import load_task
+            from screenplay.runner import Episode, append_json, write_json
+            from screenplay.tasks import load_task
             task = load_task(args.task)
             if args.condition == "gui":
-                from gameworld.desktop import require_permissions
+                from screenplay.desktop import require_permissions
                 require_permissions()
                 env = Episode(replace(task, max_decisions=args.decisions), args.directory)
                 obs = env.start()
                 schemas = []
             else:
-                from gameworld_text.tatham import make_environment
-                from gameworld_text.fifteen import tools
+                from screenplay_text.tatham import make_environment
+                from screenplay_text.fifteen import tools
                 args.directory.mkdir(parents=True, exist_ok=False, mode=0o700)
                 (args.directory / "private").mkdir(mode=0o700)
                 env = make_environment(args.task, "text-symbolic", args.decisions)

@@ -159,7 +159,7 @@ static void TextPublish(nlohmann::json &j) {
     if(!ready || !error.empty() || updates<target_updates) return;
     j["text"]=DescribeText();j["action_error"]=action_error;
     // Persist the exact response before blocking for the next decision.
-    const std::string state_path=getenv("GAMEWORLD_STATE_FILE"), temp=state_path+".text.tmp";
+    const std::string state_path=getenv("SCREENPLAY_STATE_FILE"), temp=state_path+".text.tmp";
     { std::ofstream file(temp); file << j.dump(); }
     std::filesystem::rename(temp,state_path);
     std::cout << "GWSTATE " << j.dump() << std::endl;

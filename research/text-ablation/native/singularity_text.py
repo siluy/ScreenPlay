@@ -7,8 +7,8 @@ import json
 import sys
 
 import pygame
-import gameworld_adapter as native
-import gameworld.native_bridge as bridge
+import screenplay_adapter as native
+import screenplay.native_bridge as bridge
 import singularity
 from singularity.code import dirs, g
 from singularity.code.graphics import button, dialog, scrollbar, slider, text

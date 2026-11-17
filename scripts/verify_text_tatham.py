@@ -7,11 +7,11 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from gameworld.tasks import catalog
-from gameworld.validation import engine_run, reference_commands
-from gameworld_text.fifteen import build_request
-from gameworld_text.tatham import make_environment
-from gameworld_text.agent import parse_action
+from screenplay.tasks import catalog
+from screenplay.validation import engine_run, reference_commands
+from screenplay_text.fifteen import build_request
+from screenplay_text.tatham import make_environment
+from screenplay_text.agent import parse_action
 
 
 def audit():

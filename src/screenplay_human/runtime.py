@@ -18,7 +18,7 @@ class NativeRuntime:
             import Quartz
             if (Quartz.CGSessionCopyCurrentDictionary() or {}).get("CGSSessionScreenIsLocked", False):
                 raise RuntimeError("desktop_locked")
-        from gameworld.desktop import require_permissions
+        from screenplay.desktop import require_permissions
         require_permissions()
 
     def __init__(self, task_id, condition, decisions, directory, *, actor="human"):

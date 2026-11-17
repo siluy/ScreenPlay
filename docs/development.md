@@ -10,7 +10,7 @@ ScreenPlay 浏览器服务 0.2.4 的参与作答、研究管理和开发指南�
 
 ```sh
 uv sync --locked --extra native-games
-uv run gameworld build tatham
+uv run screenplay build tatham
 # Tatham 的图片和文本题均已具备运行条件。
 uv run screenplay-human serve --data runs/human-study --port 8790
 ```
@@ -21,14 +21,14 @@ uv run screenplay-human serve --data runs/human-study --port 8790
 
 ```sh
 brew install sdl2_image sdl2_mixer sdl2_ttf xerces-c openal-soft pkgconf mad minizip libpng xz lzo
-uv run gameworld build openttd
-uv run gameworld build singularity
-uv run gameworld build pysolfc
-uv run gameworld build enigma
-uv run gameworld build endless_sky
+uv run screenplay build openttd
+uv run screenplay build singularity
+uv run screenplay build pysolfc
+uv run screenplay build enigma
+uv run screenplay build endless_sky
 uv run python scripts/build_text_endless.py
 uv run python scripts/build_text_remaining.py all
-uv run gameworld doctor
+uv run screenplay doctor
 ```
 
 `build` 会按 `game_packages/*/source.json` 获取固定上游版本，在独立准备目录应用适配补丁。Endless Sky 文本驱动复用原生构建对象，需要先完成其 GUI 构建。构建可能需要较长时间和较大的本地缓存；平台动态库由主机提供。所有上游许可随游戏包保存。
@@ -89,8 +89,8 @@ runs/study-001/
 | `src/screenplay_human/static` | 同版本的参与、管理和开发页面 |
 | `src/screenplay_human/study.py` | 分配、持久化、权限、动作去重、预算、退出 |
 | `src/screenplay_human/runtime.py` / `worker.py` | 每次 attempt 的独立原生进程与有界 IPC |
-| `src/gameworld` | 现有图片执行与原生判分 |
-| `src/gameworld_text` | 现有文本观察和受限语义动作 |
+| `src/screenplay` | 现有图片执行与原生判分 |
+| `src/screenplay_text` | 现有文本观察和受限语义动作 |
 | `game_packages` | 固定源版本、90道任务、适配补丁、参考轨迹、上游许可 |
 
 新增游戏需要定义公开目标与规则、可信原生判分以及有限动作。浏览器端不得直接执行原生命令、修改结果或提供参考解。`Study._public` 是明确的公开字段白名单；新增观察字段需确认它属于被试可见信息。

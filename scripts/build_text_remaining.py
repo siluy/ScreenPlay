@@ -79,20 +79,20 @@ def relink(package, unit, source, binary, extra_sources=None):
 
 
 def build_openttd():
-    source = (ROOT / "game_packages/openttd/native/gameworld_bridge.cpp").read_text()
+    source = (ROOT / "game_packages/openttd/native/screenplay_bridge.cpp").read_text()
     source = replace_once(source, "namespace {", "static void TextPublish(nlohmann::json &j);\n\nnamespace {")
     source = replace_once(source, "    try {\n        const std::string temporary", "    TextPublish(j);\n    try {\n        const std::string temporary")
     source += "\n" + (ROOT / "research/text-ablation/native/openttd_text.inc").read_text()
     main = (ROOT / ".cache/prepared/openttd/src/openttd.cpp").read_text()
     main = replace_once(main, "/* In a dedicated server, the server does not play */\n\tif (!VideoDriver::GetInstance()->HasGUI()) {",
-                        "/* The text driver retains the ordinary single-player company setup. */\n\tif (!VideoDriver::GetInstance()->HasGUI() && !GameWorldEnabled()) {")
-    relink("openttd", "gameworld_bridge.cpp", source, "openttd-text", {"openttd.cpp": main})
+                        "/* The text driver retains the ordinary single-player company setup. */\n\tif (!VideoDriver::GetInstance()->HasGUI() && !ScreenPlayEnabled()) {")
+    relink("openttd", "screenplay_bridge.cpp", source, "openttd-text", {"openttd.cpp": main})
 
 
 def build_enigma():
     source = (ROOT / ".cache/prepared/enigma/src/game.cc").read_text()
-    source = replace_once(source, '#include "../gameworld_bridge.hh"',
-                          '#include "' + str(ROOT / ".cache/prepared/enigma/gameworld_bridge.hh") + '"')
+    source = replace_once(source, '#include "../screenplay_bridge.hh"',
+                          '#include "' + str(ROOT / ".cache/prepared/enigma/screenplay_bridge.hh") + '"')
     source = replace_once(source, '#include "game.hh"', '#include "game.hh"\n#include "' +
                           str(ROOT / "research/text-ablation/native/enigma_text.hh") + '"')
     source = replace_once(source, "                gw::publish();", "                gw::publish();\n                gwtext::publish();")

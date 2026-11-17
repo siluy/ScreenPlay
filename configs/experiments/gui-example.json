@@ -1,0 +1,19 @@
+{
+  "name": "ScreenPlay GUI example",
+  "tasks": [
+    "fifteen-01",
+    "net-3x3"
+  ],
+  "agents": [
+    {
+      "id": "model",
+      "type": "openai-compatible",
+      "config": "../agents/openai-compatible.json"
+    }
+  ],
+  "repetitions": 1,
+  "limits": {
+    "max_wall_seconds": 3600
+  },
+  "stop_on_api_error": true
+}

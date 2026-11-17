@@ -20,7 +20,7 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 211
+      "bytes": 212
     },
     {
       "path": "CONTRIBUTING.md",
@@ -452,7 +452,7 @@
     },
     {
       "path": "scripts/release/gitignore",
-      "bytes": 211
+      "bytes": 212
     },
     {
       "path": "scripts/run_cloudflare_tunnel.py",

@@ -5,7 +5,7 @@ A benchmark and evaluation harness for agents acting in native games through GUI
 **[Read the full paper (PDF, including supplementary material)](paper/screenplay.pdf)**
 
 *Beyond Getting It Done: Decoupling What Agents Achieve from How They See and Act*  
-Luyang Si, Dongsheng Ma, Zhicheng Li (Sichuan University), Zhixiong Han, Leyi Pan, Lijie Wen.
+Luyang Si, Dongsheng Ma, Zhicheng Li, Zhixiong Han, Leyi Pan, Lijie Wen.
 
 ## What is included
 
